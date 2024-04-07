@@ -1,0 +1,5 @@
+*.md
+*.html
+Dockerfile
+.dockerignore
+images/
