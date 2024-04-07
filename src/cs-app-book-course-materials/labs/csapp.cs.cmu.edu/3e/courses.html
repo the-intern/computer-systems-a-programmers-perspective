@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<title>CS:APP3e, Bryant and O'Hallaron</title>
+<link href="http://csapp.cs.cmu.edu/3e/css/csapp.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- Page-independent header  -->
+<div id="cover_box">
+<a href="http://csapp.cs.cmu.edu/3e/home.html">
+<img src="http://csapp.cs.cmu.edu/3e/images/csapp3e-cover.jpg" width=70>
+</a>
+</div>
+<div id="title_box">
+<p class="title">Computer Systems: A Programmer's Perspective, 3/E (CS:APP3e)</p>
+<p class="author"> <a href="http://www.cs.cmu.edu/~bryant">Randal E. Bryant</a> and <a href="http://www.cs.cmu.edu/~droh">David R. O'Hallaron</a>, Carnegie Mellon University</p>
+</div>
+
+<!-- Page-dependent links go in the horizontal navigation bar -->
+<div id="top_nav_box">
+<ul>
+<li><a href="mailto:randy.bryant@cs.cmu.edu, droh@cs.cmu.edu">Contact us</a>
+<li><a href="mailto:tracy.johnson2@pearson.com">Request desk copy</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/changes3e.html">Changes from 2/E</a>
+<li><a href="http://www.amazon.com/Computer-Systems-Programmers-Perspective-Edition/dp/013409266X">Amazon.com</a>
+<li><a href="http://www.pearsonhighered.com/educator/product/Computer-Systems-A-Programmers-Perspective-3E/9780134092669.page">Pearson</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/about.html">About</a>
+</ul>
+</div>
+
+<!-- Page-independent links go in the vertical navigation bar -->
+<div id="left_nav_box">
+<ul>
+<li><a href="http://csapp.cs.cmu.edu/3e/home.html">Home</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/waside.html">Web Asides</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/students.html">Student Site</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/instructors.html">Instructor Site</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/pieces/preface3e.pdf">TOC and Preface</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/adoptions.html">Adoptions</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/errata.html">Errata</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/papers.html">Papers</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/curriculum.html">Curriculum</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/courses.html">Courses</a>
+</ul>
+</div>
+
+<div id="content_box">
+<!-- ----------------- -->
+<!-- CONTENT GOES HERE -->
+<!-- ----------------- -->
+
+<h1>Courses Based on CS:APP</h1>
+
+<p>
+The CS:APP <a
+href="http://csapp.cs.cmu.edu/3e/pieces/preface3e.pdf">Preface</a>
+proposes 5 basic styles of systems courses 
+(ORG, ORG+, ICS, ICS+,
+and SP) that could be taught from the book:
+
+<p>
+<table id="course_table">
+<tr>
+<th>Chap</td>
+<th>Topic</th>
+<th class="course_hdr">ORG</th>
+<th class="course_hdr">ORG+</th>
+<th class="course_hdr">ICS</th>
+<th class="course_hdr">ICS+</th>
+<th class="course_hdr">SP</th>
+</tr>
+
+<tr>
+<td>1</td><td class="left">Tour of systems</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td>
+</tr>
+
+<tr class="alt">
+<td>2</td><td>Data representation</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X (d)</td>
+</tr>
+
+<tr>
+<td>3</td><td>Machine language</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td>
+</tr>
+
+<tr class="alt">
+<td>4</td><td>Processor architecture</td><td>X</td><td>X</td><td></td><td></td><td></td>
+</tr>
+
+<tr>
+<td>5</td><td>Code optimization</td><td></td><td>X</td><td>X</td><td>X</td><td></td>
+</tr>
+
+<tr class="alt">
+<td>6</td><td>Memory hierarchy</td><td>X (a)</td><td>X</td><td>X</td><td>X</td><td>X (a)</td>
+</tr>
+
+<tr>
+<td>7</td><td>Linking</td><td></td><td></td><td>X (c)</td><td>X (c)</td><td>X</td>
+</tr>
+
+<tr class="alt">
+<td>8</td><td>Exceptional control flow</td><td></td><td></td><td>X</td><td>X</td><td>X</td>
+</tr>
+
+<tr>
+<td>9</td><td>Virtual memory</td><td>X (b)</td><td>X</td><td>X</td><td>X</td><td>X</td>
+</tr>
+
+<tr class="alt">
+<td>10</td><td>System-level I/O</td><td></td><td></td><td></td><td>X</td><td>X</td>
+</tr>
+
+<tr>
+<td>11</td><td>Network programming</td><td></td><td></td><td></td><td>X</td><td>X</td>
+</tr>
+
+<tr class="alt">
+<td>12</td><td>Concurrent programming</td><td>  </td><td></td><td></td><td>X</td><td>X</td>
+</tr>
+</table>
+<b>Notes:</b> (a) Hardware only, (b) No dyn. storage alloc, 
+(c) No dyn. linking, (d) No f.p.
+
+<h3>Specific Examples</h3>
+Here are some variants on these styles that real instructors have
+developed for their classes.
+
+<ul class="flushlist">
+
+<li>St. Louis University, Departments of Math and CS, and ECE
+<br><a href="http://cs.slu.edu/~fritts/CSCI224_S15/">
+CSCI 224/ECE 317 - Computer Architecture</a>
+<br>Jason Fritts, Spring 2015 (16-week semester)
+<ul>
+A variant of the ORG course that covers the first four chapters of
+CS:APP, culminating with a study of processor architecture.
+</ul>
+
+<p>
+<li> University of Nebraska, Dept. of Computer Science and Engineering,
+<br><a href="http://cse.unl.edu/~goddard/Courses/JDEP284/">
+CSCE/RAIK 284H - Foundations of Computer Systems</a>
+<br>Steve Goddard, Spring 2010 (14-week semester)
+<ul>
+<li> An interesting variant of an ORG+ course that augments the usual topics
+of data representation, assembly language, processor architecture, and the 
+memory system, with additional coverage of basic system-level programming.
+To see how the student's respond to Steve's dedication to the material, check out
+<a href="http://cse.unl.edu/~goddard/pix/GoddardAsZangief.jpg">this picture</a>
+</ul>
+
+<p>
+<li> Northwestern University, Dept. of Computer Science,
+<a href="http://www.aqualab.cs.northwestern.edu/class/136-eecs-213-introduction-to-computer-systems-spring-2012">
+<br>EECS 213: Introduction to Computer Systems</a>,
+<br>Fabian Bustamante, Spring 2012 (10-week quarter).
+<ul>
+<li> A good example of a variant of an ICS course for schools on the
+quarter system.  It skips coverage of code optimization, but includes
+some coverage of systems programming.
+</ul>
+
+<p>
+<li> Carnegie Mellon University, School of Computer Science,
+<br><a href="http://www.cs.cmu.edu/~213">
+15-213/18-213: Introduction to Computer Systems</a>,
+<br>Taught every semester (14 weeks)
+<ul>
+<li> This is the ICS+ course, the primary inspiration for the CS:APP text.
+</ul>
+
+<p>
+<li> Carnegie Mellon University, School of Computer Science,
+<a href="http://www.cs.cmu.edu/afs/cs/academic/class/15349-s02/3e/www">
+<br>15-349: Introduction to Processor Design</a>,
+<br>Randy Bryant and David O'Hallaron, Summer 2002 (3-week mini-course).
+<ul>
+<li> A well-received mini-course on processor architecture that we taught 
+to help us debug the material in Chapter 4.
+<li> The original course material has been updated for CS:APP3e. 
+</ul>
+
+<!-- ----------- -->
+<!-- END CONTENT -->
+<!-- ----------- -->
+<p class="footer">Copyright &copy; 2015
+Randal E. Bryant and David R. O'Hallaron</p>
+</div> <!--content_box-->
+
+<!-- Feed sidebar -->
+<div id=sidebar>
+<h2 class="">Recent articles from the <a href="http://csappbook.blogspot.com">CS:APP blog</a></h2>
+<script
+src="http://feeds.feedburner.com/csapp?format=sigpro&
+nItems=15&
+displayExcerpts=true&
+excerptFormat=plain&
+excerptLength=25&
+displayDate=true&
+dateLocation=below"
+type="text/javascript" ></script>
+</div> <!-- sidebar -->
+
+<! Google Analytics tracking code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5405607-4");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+
+
+
+
+
+

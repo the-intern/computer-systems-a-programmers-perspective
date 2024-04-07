@@ -1,0 +1,1069 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<title>CS:APP3e, Bryant and O'Hallaron</title>
+<link href="http://csapp.cs.cmu.edu/3e/css/csapp.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- Page-independent header  -->
+<div id="cover_box">
+<a href="http://csapp.cs.cmu.edu/3e/home.html">
+<img src="http://csapp.cs.cmu.edu/3e/images/csapp3e-cover.jpg" width=70>
+</a>
+</div>
+<div id="title_box">
+<p class="title">Computer Systems: A Programmer's Perspective, 3/E (CS:APP3e)</p>
+<p class="author"> <a href="http://www.cs.cmu.edu/~bryant">Randal E. Bryant</a> and <a href="http://www.cs.cmu.edu/~droh">David R. O'Hallaron</a>, Carnegie Mellon University</p>
+</div>
+
+<!-- Page-dependent links go in the horizontal navigation bar -->
+<div id="top_nav_box">
+<ul>
+<li><a href="mailto:randy.bryant@cs.cmu.edu, droh@cs.cmu.edu">Contact us</a>
+<li><a href="mailto:tracy.johnson2@pearson.com">Request desk copy</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/changes3e.html">Changes from 2/E</a>
+<li><a href="http://www.amazon.com/Computer-Systems-Programmers-Perspective-Edition/dp/013409266X">Amazon.com</a>
+<li><a href="http://www.pearsonhighered.com/educator/product/Computer-Systems-A-Programmers-Perspective-3E/9780134092669.page">Pearson</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/about.html">About</a>
+</ul>
+</div>
+
+<!-- Page-independent links go in the vertical navigation bar -->
+<div id="left_nav_box">
+<ul>
+<li><a href="http://csapp.cs.cmu.edu/3e/home.html">Home</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/waside.html">Web Asides</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/students.html">Student Site</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/instructors.html">Instructor Site</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/pieces/preface3e.pdf">TOC and Preface</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/adoptions.html">Adoptions</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/errata.html">Errata</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/papers.html">Papers</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/curriculum.html">Curriculum</a>
+<li><a href="http://csapp.cs.cmu.edu/3e/courses.html">Courses</a>
+</ul>
+</div>
+
+<div id="content_box">
+<!-- ----------------- -->
+<!-- CONTENT GOES HERE -->
+<!-- ----------------- -->
+
+<h1>Errata for CS:APP3e and its <a href="#im">Instructors Manual</a></h1>
+<b><i>Last updated 03/13/2023.</i></b>
+<p>
+Despite our best efforts to create a book with zero defects, our vigilant 
+readers have pointed out some bugs. Please report any new errata to 
+<a href="mailto:randy.bryant@cs.cmu.edu, droh@cs.cmu.edu">
+Randy Bryant and Dave O'Hallaron</a>.
+Note that some of these errors have been corrected in more recent
+printings.
+<p>
+We maintain errata for the North American edition.
+Errata for editions in other languages can be found as follows:
+<ul>
+<li><a href="http://www.yiligong.org/csapp3e/">Chinese</a>, maintained
+  by <a href="http://www.yiligong.org/">Prof. Yili Gong</a> of
+<a href="http://cs.whu.edu.cn/english/">Wuhan University</a>.
+</ul>
+<p>
+<b>Note on the Global Edition:</b> Unfortunately, the publisher
+arranged for the generation of a different set of practice and
+homework problems in the global edition.  The person doing this didn't
+do a very good job, and so these problems and their solutions have
+many errors.  We have not created an errata for this edition.
+
+
+
+<h3>North American Edition (ISBN-10: 0-13-409266-X)</h3>
+
+<ul class="flushlist">
+<li><b>Preface</b>
+<li><b>Chapter 1: A Tour of Computer Systems</b>
+
+
+<ul>
+<!--
+Example errata entry:
+<li>p. 52, Practice Problem 2.11, Part B:  It should read
+&ldquo;Why does this call to function <tty>inplace_swap</tty> set the array element to 0?.&rdquo;
+<br><i><font size=-2>Posted 04/24/2011. Kanak Kshetri</i></font>
+-->
+</ul>
+
+<li><b>Chapter 2: Representing and Manipulating Information</b>
+
+<ul>
+<li>p. 45, code for <kbd>show_bytes</kbd>.
+Variable <kbd>i</kbd> should be declared to have type <kbd>size_t</kbd>.
+<br><i><font size=-2>Posted 07/11/2015. Randal E. Bryant</i></font>
+
+<li>p. 47, aside &ldquo;New to C? Formatted printing with <kbd>printf</kbd>,&rdquo; second paragraph.
+The referenced data type should be <kbd>int32_t</kbd>, not <kbd>int_32t</kbd>.
+<br><i><font size=-2>Posted 05/23/2016. Yili Gong</i></font>
+
+<li>p. 48, aside &ldquo;New to C? Pointer creation and dereferencing,&rdquo; fourth line.
+The third pointer data type should be <kbd>void *</kbd>, not <kbd>void **</kbd>.
+<br><i><font size=-2>Posted 02/09/2013. Yili Gong</i></font>
+
+<li>p. 59, Aside at top of page.
+The second-to-last sentence should
+state: &ldquo;This behavior is not guaranteed for C programs, however,
+and so shift amounts should be kept less than the number of bits in
+the value being shifted.&rdquo;
+<br><i><font size=-2>Posted 09/28/2015. Ruth Anderson</i></font>
+
+<li>p. 71, first full paragraph, line 6.
+The range should be 0 &le; <em>x</em> &le; <em>Umax<sub>w</sub></em>.
+<br><i><font size=-2>Posted 10/25/2015. Shoeb Mohammed</i></font>
+
+<li>p. 82, second line.
+&prime;<em>x</em> should be 
+<em>x</em>&prime;.
+<br><i><font size=-2>Posted 10/25/2015. Shoeb Mohammed</i></font>
+
+<li>p. 82, third line.  Value <em>x</em> should be computed with function
+<em>B2U<sub>w</sub>(x)</em>, not <em>B2T<sub>w</sub>(x)</em>.
+<br><i><font size=-2>Posted 11/13/2015. Parinya Suparit</i></font>
+
+<li>p. 82, first equation in DERIVATION.  The left-hand side should be computed with function
+<em>B2U<sub>w</sub>(x)</em>, not <em>B2T<sub>w</sub>(x)</em>.
+<br><i><font size=-2>Posted 11/13/2015. Parinya Suparit</i></font>
+
+<li>p. 93, Figure 2.26.
+In the axis labels, the minus signs are incorrectly printed as the numeral &lsquo;2&rsquo;.
+A correct version of the image can be found <a href="http://csapp.cs.cmu.edu/3e/ics3/data/tadd4.pdf">here</a>.
+<br><i><font size=-2>Posted 09/23/2016. Matt Toups</i></font>
+
+<li>p. 111, Practice Problem 2.45.
+The entry in the third row should be 25/16.
+<br><i><font size=-2>Posted 11/23/2015. Mathieu Border&eacute;</i></font>
+
+<li>p. 125, Line before Practice Problem 2.54.
+The number shown should be <kbd>-2147483648</kbd> rather than <kbd>-21483648</kbd>.
+<br><i><font size=-2>Posted 09/05/2016. JiaSheng Chen</i></font>
+
+<li>p. 153, Solution to Problem 2.32.
+The sentence starting on third line should state
+&ldquo;In fact, the opposite is true: <kbd>tsub_ok(x, <em>TMin</em>)</kbd> should yield 1 when
+<kbd>x</kbd> is negative and 0 when it is nonnegative.&rdquo;
+<br><i><font size=-2>Posted 10/25/2015. Shoeb Mohammed</i></font>
+
+<li>p. 154, Solution to Problem 2.35, second line of part 3.
+
+It would be more precise to state 
+|<em>r</em>| < |<em>x</em>| &le; 2<sup><em>w</em>-1</sup>.
+(Note that the argument only requires
+|<em>r</em>| < 2<sup><em>w</em></sup>,
+and so the original statement
+and proof are valid.)
+<br><i><font size=-2>Posted 07/12/2018. Wang Lei</i></font>
+
+</ul>
+
+
+<li><b>Chapter 3: Machine-Level Representation of Programs</b>
+
+<ul>
+<li>p. 171, second-to-last line.
+2<sup>48</sup> is 256 terabytes, not 64 terabytes.
+<br><i><font size=-2>Posted 09/09/2016. Don Bagert</i></font>
+
+<li>p. 174, code annotation at top of page.
+It should read &ldquo;Disassembly of function <kbd>multstore</kbd> in binary file <kbd>mstore.o</kbd>.&rdquo;
+<br><i><font size=-2>Posted 10/25/2015. Shoeb Mohammed</i></font>
+
+<li>p. 175, code annotation in middle of page.
+It should read &ldquo;Disassembly of function <kbd>multstore</kbd> in binary file <kbd>prog</kbd>.&rdquo;
+<br><i><font size=-2>Posted 10/25/2015. Shoeb Mohammed</i></font>
+
+<li>p. 175, Paragraph starting &ldquo;This code is almost identical&rdquo; in middle of page.
+The end of the sentence should read &ldquo;disassembly of <kbd>mstore.o</kbd>.&rdquo;
+<br><i><font size=-2>Posted 09/03/2020. Weicheng Pei</i></font>
+
+<li>p. 177, aside &ldquo;ATT versus Intel assembly-code
+formats,&rdquo; last sentence of first paragraph.
+The assembly code shown is for the function <kbd>multstore</kbd>, not <kbd>sum</kbd>.
+<br><i><font size=-2>Posted 11/09/2015. Shoeb Mohammed</i></font>
+
+<li>p. 179, Section 3.4, first paragraph.
+The ranges given for the eight named registers for the three different instruction sets
+are incorrect.  They should be:
+<ul>
+<li>For 8086: <kbd>%ax</kbd> through <kbd>%sp</kbd>.
+<li>For IA32: <kbd>%eax</kbd> through <kbd>%esp</kbd>.
+<li>For x86-64: <kbd>%rax</kbd> through <kbd>%rsp</kbd>.
+</ul>
+<i><font size=-2>Posted 07/19/2017. Yili Gong</i></font>
+
+
+<li>p. 183, sample code near bottom of page, line 4.  The code should be &ldquo;<kbd>movb $-17, (%rsp)</kbd>.&rdquo;
+<br><i><font size=-2>Posted 10/24/2015. Jason Waterman</i></font>
+
+<li>p. 184, (Clarification, not an erratum) Figure 3.5.
+Although there is an instruction <kbd>movzbq</kbd>, the GCC compiler
+typically generates the instruction <kbd>movzbl</kbd> for this
+purpose, relying on the property that an instruction generating a 4-byte with a register as destination
+will fill the upper 4 bytes of the register with zeros.
+<br><i><font size=-2>Posted 04/27/2018. Randal Bryant</i></font>
+
+<li>p. 188, aside &ldquo;Some examples of pointers,&rdquo;
+call to <kbd>printf</kbd>.  The format string should be 
+<kbd>"a = %ld, b = %ld\n"</kbd>.
+<br><i><font size=-2>Posted 11/09/2015. Shoeb Mohammed</i></font>
+
+<li>p. 191, second full paragraph.  The first sentence should state:
+&ldquo;The third column of Figure 3.9 illustrates the effect of executing the instruction <kbd>popq %rdx</kbd> &hellip;&rdquo;
+<br><i><font size=-2>Posted 09/28/2015. Max Ma</i></font>
+
+<li>p. 191, fourth line of paragraph that begins &ldquo;The third column of Figure 3 &hellip;&rdquo;
+It should state that the value <kbd>0x123</kbd> remains at memory location <kbd>0x100</kbd>.
+<br><i><font size=-2>Posted 11/09/2015. Carlos Galdino</i></font>
+
+<li>p. 198, first line of first full paragraph.  There should be  a period after the word &ldquo;forms&rdquo;.
+<br><i><font size=-2>Posted 09/19/2016. Anise Ghorbani</i></font>
+
+<li>p. 199, third full paragraph.  The reference to instruction <kbd>idivl</kbd> should be to <kbd>idivq</kbd> instead.
+<br><i><font size=-2>Posted 02/21/2017. Changan Wang</i></font>
+
+<li>p. 199, fourth full paragraph.  The paragraph should start with &ldquo;For most applications of 64-bit <em>division</em> &hellip;&rdquo;
+<br><i><font size=-2>Posted 09/19/2015. Xingda Zhai</i></font>
+
+
+<li>p. 200, first line of text.
+It should state &ldquo;In this code, argument <kbd><em>qp</em></kbd> must first be saved in a different register (line 2), &hellip;&rdquo;
+<br><i><font size=-2>Posted 08/16/2015. Dmitry Neverov</i></font>
+
+<li>p. 201, Second paragraph of Section 3.6.1. The rule for setting the <kbd>CF</kbd> flag when subtraction is performed requires special consideration.  If <kbd>t=a-b</kbd>, then the flag will be set when <kbd>(unsigned) t > (unsigned) a</kbd>.
+<br><i><font size=-2>Posted 10/13/2021. Tung Luu</i></font>
+
+<li>p. 201, 9 lines from bottom.
+For the shift instruction, it should state: &ldquo;The overflow flag is changed only when the shift amounts is 1, 
+following rules that depend on the shift type.&rdquo;
+<br><i><font size=-2>Posted 10/30/2017. Jiaheng Wang</i></font>
+
+<li>p. 204, Practice Problem 3.13, second paragraph.
+It should state &ldquo;Suppose <kbd>a</kbd> is in some portion of <kbd>%rdi</kbd> while &hellip;&rdquo;
+<br><i><font size=-2>Posted 10/15/2015. Ronald Greenberg</i></font>
+
+<li>p. 205, Practice Problem 3.13, code for D.
+The second instruction should be &ldquo;<kbd>setne %al</kbd>.&rdquo;
+<br><i><font size=-2>Posted 11/09/2015. Carlos Galdino</i></font>
+
+<li>p. 214, third paragraph.
+The second sentence should be &ldquo;The function computes the
+absolute value <em>of the difference</em> of its two arguments <kbd>x</kbd>
+and <kbd>y</kbd>, &hellip;&rdquo;
+<br><i><font size=-2>Posted 11/11/2015. Yili Gong</i></font>
+
+<li>p. 214, Figure 3.17(c).
+The comment on line 8 of the code should state &ldquo;<kbd>Return rval</kbd>&rdquo;.
+<br><i><font size=-2>Posted 03/18/2017</i></font>.
+
+
+<li>p. 218, assembly code for <kbd>cread</kbd>.
+In the annotations for lines 3 and 5, &ldquo;<kbd>x</kbd>&rdquo;
+should be &ldquo;<kbd>xp</kbd>&rdquo;.
+<br><i><font size=-2>Posted 11/19/2015. Vlad Buslov</i></font>
+
+<li>p. 226, last sentence before Practice Problem 3.25.  It should
+state &ldquo;The compiler has determined that the loop can only be
+entered when <em>n</em> > 1, and that, as <em>n</em> is decremented,
+it will reach value 1 before reaching a value less than 1.&rdquo;
+<br><i><font size=-2>Posted 06/11/2017. Daniel O'Brien</i></font>
+
+<li>p. 234, first and second lines of text.
+They should state &ldquo; &hellip; indexed by register <kbd><em>%rsi</em></kbd>, which holds &hellip; &rdquo;
+<br><i><font size=-2>Posted 09/02/2015. Dmitry Neverov</i></font>
+
+<li>p. 235, Figure 3.23, annotation for line 5 of code.
+It should state &ldquo;<kbd>Goto *jt[index]</kbd>.&rdquo;
+<br><i><font size=-2>Posted 12/25/2015. Xinzhen Chen</i></font>
+
+<li>p. 238, Problem 3.31, Comments in assembly code at top of page.
+The register allocation is listed incorrectly.
+It should state
+&ldquo;<kbd>a</kbd> in <kbd>%rdi</kbd>,
+<kbd>b</kbd> in <kbd>%rsi</kbd>,
+<kbd>c</kbd> in <kbd>%rdx</kbd>,
+<kbd>dest</kbd> in <kbd>%rcx</kbd>.&rdquo;
+<br><i><font size=-2>Posted 07/25/2015. Yu Zhong and Carlos Galdino</i></font>
+
+<li>p. 241, fourth and fifth lines.
+They should state &ldquo;Procedure <kbd>P</kbd> can pass up to six integral values (i.e., pointers and integers) <em>in registers</em> &hellip; &rdquo;
+<br><i><font size=-2>Posted 09/02/2015. Dmitry Neverov</i></font>
+
+<li>p. 243, Figure 3.27a, line 2.
+The annotation should state &ldquo;<kbd>L1: y+2</kbd>.&rdquo;
+<br><i><font size=-2>Posted 02/15/2016. Xinzhen Chen</i></font>
+
+<li>p. 244, first full paragraph.
+The value <kbd>0x400054e</kbd> should be <kbd>0x40054e</kbd>.
+<br><i><font size=-2>Posted 07/26/2017. Daniel O'Brien</i></font>
+
+<li>p. 244, second full paragraph.
+The value <kbd>0x4000560</kbd> should be <kbd>0x400560</kbd>.
+<br><i><font size=-2>Posted 07/26/2017. Daniel O'Brien</i></font>
+
+
+<li>p. 244, Comment after line 4.
+It should state &ldquo;Disassembly of <kbd><em>first</em>(long x)</kbd>&rdquo;
+<br><i><font size=-2>Posted 09/02/2015. Dmitry Neverov</i></font>
+
+<li>p. 249, Fourth line from bottom.  Sentence ending &ldquo;&hellip; and 17 (<kbd>s3</kbd>).&rdquo; should be
+&ldquo;&hellip; and 17 (<kbd>x4</kbd>).&rdquo;
+<br><i><font size=-2>Posted 11/29/2016. Hyun Chun</i></font>
+
+<li>p. 252, Practice Problem 3.34.
+The first two sentences should state &ldquo;Consider a
+function <kbd>P</kbd>, which generates local values,
+named <kbd>a0</kbd>&ndash;</kbd>a7</kbd>.  It then calls
+function <kbd>Q</kbd>, which has no arguments.&rdquo;
+<br><i><font size=-2>Posted 11/23/2015. Vlad Buslov</i></font>
+
+<li>p. 257, Table near the bottom of the page.
+The assembly code for the first entry should be &ldquo;<kbd>movq %rdx,%rax</kbd>.&rdquo;
+<br><i><font size=-2>Posted 10/03/2015. Zhiwei Xin</i></font>
+
+<li>p. 259, Figure 3.36
+The fourth block from the bottom should have the label <kbd>A[3][2]</kbd>.
+<br><i><font size=-2>Posted 04/04/2017. Dean Kajmakci</i></font>
+
+
+<li>p. 259, assembly code in middle of page, line 3.
+The annotation should state: &ldquo;Read from M[<em>x</em><sub>A</sub> + 12<em>i</em> + 4<em>j</em>].&rdquo;
+<br><i><font size=-2>Posted 10/25/2015. Karan Dwivedi</i></font>
+
+<li>p. 263, assembly code in middle of page, line 3.
+There is a missing &lsquo;)&rsquo; at the end of the annotation.
+<br><i><font size=-2>Posted 02/11/2016. Elizabeth White</i></font>
+
+<li>p. 264, Annotations of last block of assembly code.
+It should state that <kbd>j</kbd> is in register <kbd>%rdx</kbd>.
+<br><i><font size=-2>Posted 07/26/2017. Daniel O'Brien</i></font>
+
+
+<li>p. 266, middle of page.  The declaration and initialization of <kbd>r</kbd> should 
+be:
+<br>
+ <kbd>struct rect r = { 0, 0, 10, 20, 0xFF00FF };</kbd>
+<br>
+<i><font size=-2>Posted 08/04/2015. Yu Zhong</i></font>
+
+<li>p. 277, first bullet, second and third lines after declarations.
+They should state &ldquo;&hellip; if the object has type <em>T</em>, then the pointer has type <em>T</em> <kbd>*</kbd>.&rdquo;
+<br><i><font size=-2>Posted 09/02/2015. Dmitry Neverov</i></font>
+
+<li>p. 281, Figure 3.40.
+The first sentence of the caption should read &ldquo;Character array <kbd>buf</kbd> is just <em>below</em> part of the saved state.&rdquo;
+<br><i><font size=-2>Posted 12/01/2015. Yili Gong</i></font>
+
+<li>p. 282, Table with heading &ldquo;Characters typed.&rdquo;
+The second entry should have the range 8&ndash;23.
+<br><i><font size=-2>Posted 11/6/2017. Weicheng Pei</i></font>
+
+
+<li>p. 282, Practice Problem 3.46, second paragraph.
+It should state that <kbd>get_line</kbd> is called with return address <kbd>0x400076</kbd>.
+<br><i><font size=-2>Posted 11/23/2015. Vlad Buslov</i></font>
+
+<li>p. 284, Practice Problem 3.46, part E.
+The question for ask for <em>three</em> things wrong with the code.
+<br><i><font size=-2>Posted 07/26/2017. Daniel O'Brien</i></font>
+
+<li>p. 293, Practice Problem 3.49, first paragraph.
+The third line should state &ldquo;&hellip; let <i>s</i><sub>1</sub> denote &hellip;&rdquo; (delete &ldquo;let us&rdquo;).
+<br><i><font size=-2>Posted 12/27/2020. Ashwin Najappa</i></font>
+
+<li>p. 293, Practice Problem 3.49, second paragraph.
+The text should state: &ldquo;&hellip; there may be an offset of <em>e</em><sub>2</sub> bytes between the values of <em>s</em><sub>2</sub> and <em>p</em>.&rdquo;
+<br><i><font size=-2>Posted 11/09/2015. Shoeb Mohammed</i></font>
+
+<li>p. 298. Line 11 of paragraph starting with &ldquo;The <kbd>vunpcklps</kbd> instruction &hellip;&rdquo;.
+It should read &ldquo;converting <em>x</em><sub>0</sub> to double precision.&rdquo;
+<br><i><font size=-2>Posted 02/24/2022. Jinbeom Hong</i></font>
+
+
+<li>p. 295, Figure 3.45.  The lower 128 bits of register <kbd>%ymm13</kbd> should be labeled <kbd>%xmm13</kbd>.
+<br><i><font size=-2>Posted 10/28/2015. David Hirschv</i></font>
+
+<li>p. 300, Problem 3.51, second line.
+The return value has type &ldquo;<kbd>dest_t</kbd>.&rdquo;
+<br><i><font size=-2>Posted 10/13/2016. Anise Ghorbani</i></font>
+
+<li>p. 301, Problem 3.51.  The first entry should be
+&ldquo;<kbd>vcvtsi2sdq %rdi, %xmm0, %xmm0</kbd>&rdquo;
+<br><i><font size=-2>Posted 07/02/2022. Bartosz Zbiciak</i></font>
+
+<li>p. 305, Figure 3.50.
+The two instructions for data type double should be 
+&ldquo;<kbd>vxorpd</kbd>&rdquo; and
+&ldquo;<kbd>vandpd</kbd>&rdquo;.
+<br><i><font size=-2>Posted 07/02/2022. Bartosz Zbiciak</i></font>
+
+<li>p. 306, Table listing two instructions.
+These should be <kbd>vucomiss</kbd> and <kbd>vucomisd</kbd> (AVX instructions), rather than 
+<kbd>ucomiss</kbd> and <kbd>ucomisd</kbd> (SSE instructions).
+<br><i><font size=-2>Posted 03/09/2018. Weicheng Pei</i></font>
+
+<li>p. 313, Problem 3.60, first line of code.
+Argument <kbd>n</kbd> should be declared as being of type <kbd>int</kbd>.
+<br><i><font size=-2>Posted 07/21/2015. Lauren Cooper</i></font>
+
+<li>p. 326, Solution to Problem 3.3, third line of text.
+These examples <em>do not</em> rely on the rules of integral promotion.
+These rules concern operations performed on data values smaller than those of type <kbd>int</kbd>.  See, for example
+<a href="https://wiki.sei.cmu.edu/confluence/display/c/INT02-C.+Understand+integer+conversion+rules">
+https://wiki.sei.cmu.edu/confluence/display/c/INT02-C.+Understand+integer+conversion+rules</a>.  This topic is not covered in the book.
+<br><i><font size=-2>Posted 04/26/2018. Randal Bryant</i></font>
+
+
+<li>p. 326, Solution to Problem 3.3, fifth line of code.
+The code should be <kbd>movq %rax, $0x123</kbd> to be consistent with the problem statement,
+although both versions have the same error.
+<br><i><font size=-2>Posted 06/02/2015. Zhi Li</i></font>
+
+<li>p. 326, Solution to Problem 3.3, sixth line of code.
+The code should be <kbd>movl %eax, %rdx</kbd> to be consistent with the problem statement,
+although both versions have the same error.
+<br><i><font size=-2>Posted 09/02/2015. Elizabeth White</i></font>
+
+<li>(Clarification, not an erratum) p. 326, Solution to Problem 3.4, seventh line of code.
+The GCC compiler generates the instruction <kbd>movzbl</kbd> for this case, even though the goal is to
+extend the 1-byte value to 8 bytes.  See the note on Figure 3.5 (p. 184).
+<br><i><font size=-2>Posted 04/27/2018. Randal Bryant</i></font>
+
+<li>p. 330, Solution to Problem 3.14D.
+The comparison is for <kbd><=</kbd>.
+<br><i><font size=-2>Posted 08/16/2015. Dmitry Neverov</i></font>
+
+<li>p. 331, Solutions to Problems 3.15B and 3.15D.
+The values starting with &ldquo;<kbd>0x0x</kbd>&rdquo;
+should start with &ldquo;<kbd>0x</kbd>&rdquo; instead.
+<br><i><font size=-2>Posted 12/04/2015. Carlos Galdino and Yili Gong</i></font>
+
+<li>p. 333, Solution to Problem 3.20.
+The comment on the third line of code should read &ldquo;<kbd>Test x</kbd>&rdquo;.
+<br><i><font size=-2>Posted 06/02/2015. Curtis Gagliardi</i></font>
+
+<li>p. 338, Solution to Problem 3.30, third bullet.
+The final sentence should say &ldquo;Thus, case labels 3 and <em>6</em> are missing in the <kbd>switch</kbd> statement body.&rdquo;
+<br><i><font size=-2>Posted 09/27/2015. Xinyun Zhao</i></font>
+
+<li>p. 339, Solution to Problem 3.32, line labeled &ldquo;F4&rdquo;.
+The instruction should be &ldquo;<kbd>repz retq</kbd>.&rdquo;
+<br><i><font size=-2>Posted 10/13/2016. Wenjun Huang</i></font>
+
+<li>p. 339, Solution to Problem 3.33, line 4.
+The expression should be <kbd>*v += b</kbd>
+<br><i><font size=-2>Posted 06/24/2019. Deepayan Patra</i></font>
+
+<li>p. 346, Solution to Problem 3.46C.
+The program is attempting to return to address <kbd>0x400034</kbd>, not <kbd>0x040034</kbd>.
+<br><i><font size=-2>Posted 10/24/2016. Wenjun Huang</i></font>
+
+<li>p. 347, Solution to Problem 3.46E.
+In addition, the program should test the value returned by <kbd>gets</kbd> to make sure it's not <kbd>NULL</kbd>.
+<br><i><font size=-2>Posted 07/26/2017. Daniel O'Brien</i></font>
+
+
+<li>p. 348, Solution to Problem 3.51.
+In the third entry of the table, the conversion is from <kbd>double</kbd> to <kbd>float</kbd>, as is requested in the problem statement.
+<br><i><font size=-2>Posted 08/09/2015. Yu Zhong</i></font>
+
+<li>p. 349, Solution to Problem 3.53, last paragraph of text.
+The ambiguity arises from the commutativity of addition, not multiplication.
+<br><i><font size=-2>Posted 11/09/2015. Shoeb Mohammed</i></font>
+
+
+
+</ul>
+
+<li><b>Chapter 4: Processor Architecture</b>
+
+<ul>
+
+<li>p. 360, Problem 4.2A.
+There should be an additional byte with hexadecimal value <kbd>00</kbd> at the end of the sequence.
+<br><i><font size=-2>Posted 08/16/2016. James Timmins</i></font>
+
+<li>p. 360, Problem 4.2B.
+There should be an additional byte with hexadecimal value <kbd>90</kbd> at the end of the sequence.
+<br><i><font size=-2>Posted 12/01/2015. Shoeb Mohammed</i></font>
+
+<li>p. 365, Figure 4.6, Line 9 of x86-64 code.  The comment should say &ldquo;Test count&rdquo;
+<br><i><font size=-2>Posted 01/02/2017. Lee Wintervold</i></font>
+
+<li>p. 366, middle of page.  The four words listed are incorrect.  They should be
+<kbd>0x000d000d000d</kbd>,
+<kbd>0x00c000c000c0</kbd>,
+<kbd>0x0b000b000b00</kbd>, and
+<kbd>0xa000a000a000</kbd>.
+<br><i><font size=-2>Posted 06/23/2017. Yiling Gong</i></font>
+
+<li>p. 369, paragraph in middle of page, sixth line.  The value <kbd>0xabcdabcdabcdabcd</kbd> should be
+<kbd>0xabcdabcdabcd</kbd>.
+<br><i><font size=-2>Posted 10/02/2020. Radoslaw Jurga</i></font>
+
+<li>p. 371, Practice Problem 4.7.  The annotation for line 7 of the code should state &ldquo;Return 0 or 8.&rdquo;
+<br><i><font size=-2>Posted 12/02/2015. Alex Knaust</i></font>
+
+
+<li>p. 377, Figure 4.13(b):
+The last selection in the HCL code should read &ldquo;<kbd>1 : B;</kbd>&rdquo; (The number <kbd>1</kbd> rather than the letter <kbd>l</kbd>).
+<br><i><font size=-2>Posted 06/02/2015. Paul Anagnostopoulos</i></font>
+
+<li>p. 404, Figure 4.26, 7th entry.
+The name should be <kbd>IOPQ</kbd>, not <kbd>IOPL</kbd>.
+<br><i><font size=-2>Posted 10/24/2016. Wenjun Huang</i></font>
+
+<li>p. 404, Figure 4.26, 14th entry.
+The name should be <kbd>RRSP</kbd>, not <kbd>RESP</kbd>.
+<br><i><font size=-2>Posted 08/26/2015. Yu Zhong</i></font>
+
+
+<li>p. 405, Caption of Figure 4.27.
+It should state &ldquo;Ten bytes are read from the instruction memory &hellip;&rdquo;
+<br><i><font size=-2>Posted 07/25/2015. Randal E. Bryant</i></font>
+
+<li>p. 407, parenthetical remark before HCL code for <kbd>srcA</kbd>.
+Should state &ldquo;recall that <kbd>RRSP</kbd> is the register ID of <kbd>%rsp</kbd>.&rdquo;
+<br><i><font size=-2>Posted 08/26/2015. Yu Zhong</i></font>
+
+<li>p. 420, second line from bottom.
+Reference to Figure 4.38(c) should be to Figure 4.38(d).
+<br><i><font size=-2>Posted 07/23/2018. Jong-won Choi</i></font>
+
+<li>p. 439, fourth and fifth lines from bottom.
+The sentence should state &ldquo;The value for register <kbd>%rbx</kbd> is also forwarded from the memory to the <em>decode</em> stage.&rdquo;
+<br><i><font size=-2>Posted 08/09/2015. Liemin Ma</i></font>
+
+<li>p. 434, Figure 4.47.
+The instruction at address <kbd>0x016</kbd> should be <kbd>addq</kbd>.
+<br><i><font size=-2>Posted 11/23/2015. Warren Crasta</i></font>
+
+<li>p. 441, Figure 4.53.
+The instruction at address <kbd>0x32</kbd> should be <kbd>addq %rbx,%rax</kbd>.
+<br><i><font size=-2>Posted 07/28/2015. Randal Bryant</i></font>
+
+<li>p. 443, Figure 4.55.  Three errors:
+<ul>
+<li>The program is <kbd>prog6</kbd>.
+<li>The instruction at address <kbd>0x000</kbd> should be <kbd>irmovq Stack,%rsp</kbd>.
+<li>The instruction at address <kbd>0x013</kbd> should be <kbd>irmovq $10,%rdx</kbd>.
+</ul>
+<i><font size=-2>Posted 07/28/2015. Randal Bryant + 12/21/2017 Dave Ohlsson</i></font>
+
+<li>p. 444, Figure 4.56.
+The instuctions at addresses <kbd>0x016</kbd> and <kbd>0x020</kbd> should be <kbd>irmovq</kbd>.
+<br><i><font size=-2>Posted 10/24/2016. Wenjun Huang</i></font>
+
+<li>p. 445, first complete paragraph.  As a general note, our
+processor designs do not attempt to set the program counter
+(PC) to a consistent value when an exception occurs.  In a more
+complete implementation, the PC would be set to the address of the
+instruction that causes the exception, but this is not the case for
+the pipelined implementations.
+<br><i><font size=-2>Posted 06/05/2018. Eadren King</i></font>
+
+
+<li>p. 454, last sentence on page.
+It should read &ldquo;In this figure, you can also see that many of the values in pipeline registers M and W &hellip;.&rdquo;
+<br><i><font size=-2>Posted 12/25/2015. Jiwen He</i></font>
+
+
+<li>p. 473, Bibliographic Notes. In the last line, &ldquo;Intel-compatible x86-64 processor&rdquo; should 
+be &ldquo;Intel-compatible IA32 processor.&rdquo;
+<br><i><font size=-2>Posted 05/04/2015. Scott Wright</i></font>
+
+<li>p. 482, Solution to Problem 4.4. Second line from bottom.
+The instruction should be <kbd>jle return</kbd>, and the comment should be
+&ldquo;If count <= 0, return 0&rdquo;
+<br><i><font size=-2>Posted 01/11/2016. Xinzhen Chen</i></font>
+
+<li>p. 491, Solution to Problem 4.33. Last sentence should state
+&ldquo; &hellip; register <kbd>%rax</kbd> will be set to the incremented stack pointer  &hellip; &rdquo;
+<br><i><font size=-2>Posted 10/13/2021. Yili Gong</i></font>
+
+
+<li>p. 492, Solution to Problem 4.35. Second to last sentence should state:
+&ldquo; &hellip; the conditional move source value <kbd>0x123</kbd> 
+gets forwarded into ALU input valA, while input valB correctly gets operand value
+<kbd>0x321</kbd>.&rdquo;
+<br><i><font size=-2>Posted 07/21/2015. Liemin Ma</i></font>
+
+<li>p. 494, Solution to Problem 4.44.  The answers to part A and part C are both off by 2 instructions:
+<ul>
+<li>The inner loop of the code using the conditional jump contains 9
+  instructions,  8 of which are executed when the array element is positive.
+<li>The inner loop of the code using the conditional move contains 8
+  instructions.
+<li>The conditional jump code requires an average of 9.5 cycles.
+<li>The conditional move code requires an average of 8.0 cycles.
+</ul>
+<i><font size=-2>Posted 12/15/2015. Nathaniel Green</i></font>
+
+</ul>
+
+
+<li><b>Chapter 5: Optimizing Program Performance</b>
+
+<ul>
+<li>p. 520, around 1/3 way down the page.  The refererence to register &ldquo;<kbd>%eax</kbd>&rdquo;
+ should instead be to  &ldquo;<kbd>%rax</kbd>.&rdquo;
+<br><i><font size=-2>Posted 12/01/2015. Shoeb Mohammed</i></font>
+
+<li>p. 533, second to last line in first paragraph.
+It should state &ldquo; &hellip; up to a factor of 6.&rdquo;
+<br><i><font size=-2>Posted 07/26/2017. Daniel O&rsquo;Brien</i></font>
+
+<li>p. 533, code annotations for inner loop of <kbd>combine5</kbd>.
+Variable <kbd>limit</kbd> is stored in register <kbd>%rbp</kbd>.
+<br><i><font size=-2>Posted 12/01/2015. Shoeb Mohammed</i></font>
+
+<li>p. 533&ndash;534, sentence spanning these two pages.
+It should state: &ldquo;The loop unrolling leads to
+two <kbd>vmulsd</kbd> instructions&mdash;one to
+multiply <kbd>acc</kbd> by <kbd>data[i]</kbd>, and the second to multiply <kbd>acc</kbd> by <kbd>data[i+1]</kbd>.
+<br><i><font size=-2>Posted 01/02/2016. Mark Morrissey</i></font>
+
+<li>p. 546.  Web Aside OPT:SIMD.
+The assembly code should reference register &ldquo;<kbd>%rcx</kbd>,&rdquo; not &ldquo;<kbd>%rcs</kbd>.&rdquo;
+<br><i><font size=-2>Posted 05/08/2016. Sheldon Guo</i></font>
+
+<li>p. 547. Table in description of Web Aside OPT:SIMD.
+<ul>
+<li>
+The headings under the category &ldquo;Floating point&rdquo; should read <kbd>float</kbd> and <kbd>double</kbd>, rather than
+<kbd>int</kbd> and <kbd>long</kbd>.
+<br><i><font size=-2>Posted 07/25/2015. Randal E. Bryant</i></font>
+<li>
+Several entries in the line &ldquo;Scalar throughput bound&rdquo; are incorrect.  The eight bounds should be:
+0.50, 1.00, 0.50, 1.00, 1.00, 0.50, 1.00, 0.50.
+<br><i><font size=-2>Posted 12/12/2022. Jonathan Phillips</i></font>
+</ul>
+
+<li>p. 551, Table in middle of page.  The code for <kbd>combine4b</kbd> should be listed as being on page 551.
+<br><i><font size=-2>Posted 02/21/2022. Waqas Younas</i></font>
+
+<li>p. 561, Practice Problem 5.11, last paragraph.  It should state &ldquo;Perform an analysis similar to those 
+shown for <kbd>combine4</kbd> &hellip; &rdquo;.
+<br><i><font size=-2>Posted 03/22/2022. </i>Pedro Henrique</font>
+
+
+
+<li>p. 556, Figure 5.33 caption. <kbd>dest</kbd> should be <kb>dst</kbd>
+<br><i><font size=-2>Posted 07/31/2018. Tanvir Alam</i></font>
+
+<li>p. 568, Last paragraph of Section 5.14.  By Amdahl&rsquo;s Law (Equation 1.2), the predicted speedup is 1/(1-&alpha;) = 39.4
+<br><i><font size=-2>Posted 10/02/2022. Yili Gong</i></font>
+
+</ul>
+
+<li><b>Chapter 6: The Memory Hierarchy</b>
+
+<ul>
+
+<li>p. 602, Section 6.1.4, paragraph 4, line 9. 1980 should be 1985.
+<br><i><font size=-2>Posted 1/11/2016. Yili Gong</i></font>
+
+<li>p. 612, [Clarification]: The last sentence of the Cache Hits section refers to Figure 6.22. 
+<br><i><font size=-2>Posted 07/31/2018. Dave Ohlsson</i></font>
+
+<li>p. 640, Figure 6.40, line 22. &ldquo;<kbd>i++</kbd>&rdquo; in for loop should be &ldquo;<kbd>i += stride</kbd>&rdquo;.
+<br><i><font size=-2>Posted 03/01/2016. Shoeb Mohammed</i></font>
+
+<li>p. 640, Figure 6.40, line 35. <kbd>sizeof(double)</kbd> should be <kbd>sizeof(long)</kbd>
+<br><i><font size=-2>Posted 07/31/2018. Weicheng Pei</i></font>
+
+<li>p. 645, Figure 6.44. It should be mentioned somewher that the C
+  matrix is assumed to be initially all zeros. Also line 6 of
+  version <i>ijk</i> could eliminate an unncessary load by replacing
+  <kbd>C[i][j] += sum</kbd> with <kbd>C[i][j] = sum</kbd>. However, since this line
+  is not in the inner loop, it doesn't affect the analysis either way.
+<br><i><font size=-2>Posted 07/31/2018. Debbie Neft</i></font>
+
+<li>p. 651, Problem 6.29A,
+The diagram should have 12 boxes instead of 13. 
+<br><i><font size=-2>Posted 11/23/2015. Tj Gilbrough</i></font>
+
+<li>p. 661, The solution to Problem 6.4:
+<ul>
+  <li>
+    For parts A and B, the 1 MB file consists of 2,048 512-byte logical blocks, not 2,000 as stated in the solution.
+    <br><i><font size=-2>Posted 07/30/2018. Jonatan Schroeder</i></font>
+  <li>
+    To be precise, part B should include the total transfer time for the blocks, which
+    is 2 x T<sub>max rotation</sub> = 12 ms.
+<br><i><font size=-2>Posted 07/30/2018. Li Qiuhao</i></font>
+</ul>
+
+<li>p. 662, Solution to Part (c) Problem 6.5, the expected lifetime is ~17,535 years, not 140 years.
+<br><i><font size=-2>Posted 03/01/2016. David Hirsch</i></font>
+
+</ul>
+
+
+<li><b>Chapter 7: Linking</b>
+
+<ul>
+
+<li>p. 680, Section 7.6.1. Recent versions of <kbd>gcc</kbd> such
+as <kbd>gcc10</kbd> now default to <kbd>-fno-common</kbd>, so programs
+with multiply-defined weak symbols will now elicit a linker error.
+<br><i><font size=-2>Posted 2/14/2022. Micha&euml;l Cadilhac</i></font>
+
+<li>p. 682. paragraph 2. in the output from foobar5, the values
+of <kbd>x</kbd> and <kbd>y</kbd> are corrupted, but the precise values
+are system-dependent.
+<br><i><font size=-2>Posted 12/16/2015. Yili Gong</i></font>
+
+<li>p. 683, [Clarification]: The variable <kbd>x</kbd> referred to in
+the first paragraph is from <kbd>foo5.c</kbd>.
+<br><i><font size=-2>Posted 07/31/2018. Dave Ohlsson</i></font>
+
+<li>p. 690, paragraph above Figure 7.9 that reads &ldquo;Recall from Section 3.6.3&rdquo; should be &ldquo;Recall from Section 3.6.4.&rdquo;
+<br><i><font size=-2>Posted 7/30/2018. Yili Gong and Jianxun Xie</i></font>.  
+
+<li>p. 698, Figure 7.15.
+The address for the user stack (<kbd>2<sup>48</sup>-1</kbd>) is wrong. 
+The correct address is much smaller, and varies from process to process.
+<br><i><font size=-2>Posted 07/09/2015. Dave O'Hallaron</i></font>
+
+<li>p. 698, Figure 7.15.
+<kbd>%esp</kbd> should be <kbd>%rsp</kbd>.
+<br><i><font size=-2>Posted 10/21/2015. Liz White</i></font>
+
+<li>p. 715, Problem 7.8, Module 2. <kbd>static int main=1[</kbd> should be <kbd>static int main=1;</kbd>
+<br><i><font size=-2>Posted 07/30/2018. Michael Hinton and Michael Ross</i></font>
+
+</ul>
+
+
+<li><b>Chapter 8: Exceptional Control Flow</b> 
+
+<ul>
+
+<li>p. 735, Figure 8.13. Two errors:
+<ul>
+  <li>The address for the user stack (<kbd>2<sup>48</sup>-1</kbd>) is wrong. 
+The correct address is much smaller, and varies from process to process.
+<br><i><font size=-2>Posted 07/14/2015. Dave O'Hallaron</i></font>
+
+  <li> <kbd>%esp</kbd> should be <kbd>%rsp</kbd>.
+<br><i><font size=-2>Posted 07/31/2018. Dave Ohlsson</i></font>
+</ul>
+
+<li>p. 748. First paragraph. Remove the last sentence: &ldquo;The only
+correct assumption is that each possible outcome is equally likely&rdquo; or
+replace it with &ldquo;The only correct assumption is that each possible
+outcome can indeed occur.&rdquo;
+<br><i><font size=-2>Posted 07/31/2018. Dave Ohlsson</i></font>
+
+<li>p. 751, definition of <kbd>getenv</kbd>, &ldquo;Returns: pointer
+to <kbd>name</kbd> if it exists&rdquo; should be &ldquo;Returns: pointer to value
+associated with <kbd>name</kbd> if it exists&rdquo;
+<br><i><font size=-2>Posted 7/30/2018. Yili Gong and Jianxun Xie</i></font>.  
+
+<li>p. 752, Practice problem 8.6, output of <kbd>./myecho</kbd>. &ldquo;Command-ine&rdquo; should be &ldquo;Command-line.&rdquo;
+<br><i><font size=-2>Posted 7/30/2018. Li Du</i></font>.  
+
+<li>p. 756, Figure 8.25.  <kbd>parseline()</kbd> should check that the capacity of
+  <kbd>argv</kbd> (= <kbd>MAXARGS</kbd>, defined in Figure 8.23) is not exceeded.
+<br><i><font size=-2>Posted 7/30/2018. Dave Ohlsson</i></font>.  
+
+<li>p. 762. Definition of <kbd>signal</kbd> function. On error, this
+  function sets <kbd>errno</kbd> to indicate the cause.
+  r><i><font size=-2>Posted 07/31/2018. Dave Ohlsson</i></font>
+
+<li>p. 763, Figure 8.30. For consistency, <kbd>pause()</kbd> should be <kbd>Pause()</kbd>.
+<br><i><font size=-2>Posted 02/26/2018. Bill Nace</i></font>
+
+<li>p. 768, Fig 8.34. Fixed <kbd>sio_putl</kbd> so that it correctly handles negative numbers. 
+<br><i><font size=-2>Posted 10/19/2016. Randy Bryant</i></font>
+
+<li>p. 773, Fig 8.37, line 5. To avoid the signal handler potentially
+blocking on long-running jobs, <kbd>waitpid</kbd> should be called
+with the <kbd>WNOHANG</kbd> option.
+<br><i><font size=-2>Posted 12/11/2018. Fahim Faisal</i></font>
+
+<li>p. 777, Fig 8.39, line 9. To avoid the signal handler potentially
+blocking on long-running jobs, <kbd>waitpid</kbd> should be called
+with the <kbd>WNOHANG</kbd> option.
+<br><i><font size=-2>Posted 12/11/2018. Fahim Faisal</i></font>
+
+<li>p. 779, Fig 8.40, line 8. To avoid the signal handler potentially
+blocking on long-running jobs, <kbd>waitpid</kbd> should be called
+with the <kbd>WNOHANG</kbd> option.
+<br><i><font size=-2>Posted 12/11/2018. Fahim Faisal</i></font>
+
+<li>p. 781. In the description of <kbd>sigsuspend</kbd> in the second paragraph, line 1 
+should be <kbd>sigprocmask(SIG_SETMASK, &mask, &prev);</kbd>
+<br><i><font size=-2>Posted 10/28/2015. Dave O'Hallaron</i></font>
+
+<li>p. 796. Figure 8.47. On the top line of the process graph, <kbd>p1: x=1</kbd> 
+should be <kbd>p2: x=1</kbd>.
+<br><i><font size=-2>Posted 11/8/2015. Eric Adlam</i></font>
+
+<li>p. 797. Figure 8.49. In the process graph, the bottom <kbd>exit</kbd> should
+  be <kbd>exit(2)</kbd>
+  <br><i><font size=-2>Posted 1/14/2019. Roslyn Cyrus</i></font>
+
+</ul>
+
+<li><b>Chapter 9: Virtual Memory</b>
+
+<ul>
+<li>p. 829, Figure 9.26. The kernel portion of the address space is
+identical for each process. There is no part of the kernel virtual
+memory that is different for each process.
+<br><i><font size=-2>Posted 05/08/2018. Godmar Bak</i></font>
+
+<li>p. 831, bottom of the page, &ldquo;fvm_start&rdquo; should be &ldquo;vm_start&rdquo;
+<br><i><font size=-2>Posted 03/01/2016. Ruth Anderson</i></font>
+
+<li>p. 842, first paragraph. The heap shown in Figure 9.34 
+consists of 18 words, not 16 words.
+<br><i><font size=-2>Posted 06/26/2016. Ruth Anderson</i></font>
+
+<li>p. 873, Section 9.11.6, paragraph 2. The explanation for why the
+<kbd>binheapDelete</kbd> function is buggy is correct for the version
+of ANSI C described in the K&R book, where the
+unary <kbd>--</kbd>, <kbd>++</kbd>, and <kbd>*</kbd> operators have
+the same precedence.  However, in more recent versions of C,
+<kbd>--</kbd> and <kbd>++</kbd> have higher precedence
+than <kbd>*</kbd>. So while the given code is always incorrect, the
+reason is different for different versions of C.
+<br><i><font size=-2>Posted 06/26/2016. Xinyang Zhang</i></font>
+
+<li>p. 881, Solution to Problem 9.1. 16,384 P could be expressed more
+clearly as 16 E.
+<br><i><font size=-2>Posted 07/31/2018. Daniel O'Brien and Dave Ohlsson</i></font>
+
+<li>p. 884, solution code. The <kbd>#endif</kbd> on line 12 should be removed.
+<br><i><font size=-2>Posted 07/30/2018. Wenjun Huang</i></font>
+</ul>
+
+<li><b>Chapter 10: System-Level I/O</b>
+
+<ul>
+
+<li>p. 893, Second bullet point. The relative path name should be <kbd>../droh/hello.c</kbd>
+rather than <kbd>../home/droh/hello.c</kbd>.
+<br><i><font size=-2>Posted 06/26/2016. Mathieu Bordere</i></font>
+
+<li>p. 895, <kbd>read()</kbd> returns 0 not only on <kbd>EOF</kbd>, but also if <kbd>n</kbd> is 0.
+<br><i><font size=-2>Posted 07/31/2016. Dave Ohlsson</i></font>
+
+<li>p. 904, Figure 10.10 and p. 906, Figure 10.11. 
+<kbd>main()</kbd> should check that <kbd>argc</kbd> is at least equal
+to 2 before accessing <kbd>argv[1]</kbd>.
+<br><i><font size=-2>Posted 07/31/2016. Dave Ohlsson</i></font>
+
+</ul>
+
+<li><b>Chapter 11: Network Programming</b>
+
+<ul>
+
+<li>p. 949, Aside. &ldquo;Marc Andreesen&rdquo; should be &ldquo;Marc Andreessen&rdquo;
+<br><i><font size=-2>Posted 07/31/2016. Dave Ohlsson</i></font>
+
+<li>p. 956, Figure 11.28. In the telnet trace, there should be
+&ldquo;<kbd>Connection: close</kbd>&rdquo; header, which is generated by
+the <kbd>adder.c</kbd> CGI program, sandwiched between lines 8 and 9.
+<br><i><font size=-2>Posted 06/26/2016. Laura M. Roberts</i></font>
+
+<li>p. 959, Figure 11.31. The use of multiple <kbd>sprintf</kbd> calls to
+  generate <kbd>body</kbd> violates the following rule: C99 and
+  POSIX.1-2001 specify that the results are undefined if a call to
+  sprintf(), snprintf(), vsprintf(), or vsnprintf() would cause copying to take place between
+  objects that overlap (e.g., if the target string array and one of
+  the supplied input arguments refer to the same buffer). 
+  <br><i><font size=-2>Posted 04/25/2019. Zeng Fan Pu and Urvi Agrawal</i></font>
+
+<li>p. 962, Figure 11.34. The use of multiple <kbd>sprintf</kbd> calls to
+  generate <kbd>buf</kbd> violates the same rule as p. 959.
+    <br><i><font size=-2>Posted 04/25/2019. Zeng Fan Pu and Urvi Agrawal</i></font>
+
+<li>pp. 959 and 962. Updated the Tiny code on the CS:APP Web site to fix the previous two bugs. 
+    <br><i><font size=-2>Posted 11/14/2019. Dave O'Hallaron</i></font>
+
+</ul>
+
+<li><b>Chapter 12: Concurrent Programming</b>
+
+<ul>
+
+  <li>p. 989, first sentence. Delete the entire sentence that begins
+  with &ldquo;If the main thread calls <kbd>pthread_exit</kbd>, it waits for all other threads to terminate...&rdquo; In fact,
+  <kbd>Pthread_exit</kbd> never waits for other threads to terminate. 
+<br><i><font size=-2>Posted 07/30/2018. Yuan Tang</i></font>
+
+<li>p. 997, The text describing Figure 12.17 is correct, but the Figure itself has two typos:
+<ul>
+  <li>The <kbd>U<sub>i</sub></kbd> instruction should be <kbd>addq $1, %rdx</kbd>.
+  <li>The <kbd>S<sub>i</sub></kbd> instruction should be <kbd>movq %rdx, cnt(%rip)</kbd>.
+</ul>
+<i><font size=-2>Posted 02/22/2018. Dr. Joann J Ordille</i></font>
+
+<li>p. 1002, first box. In the declaration of <kbd>sem_init</kbd>, the
+middle parameter should be <kbd>int pshared</kbd>.
+<br><i><font size=-2>Posted 07/31/2018. Dave Ohlsson</i></font>
+
+<li> p. 1015, Figure 12.31, code line 25. <kbd>sem_init</kbd>
+should be <kbd>Sem_init</kbd>
+<br><i><font size=-2>Posted 07/31/2018. Dave Ohlsson</i></font>
+
+<li> p. 1023, ten lines from the bottom. &ldquo;the static next variable&rdquo;
+should be &ldquo;the static next_seed variable&rdquo;
+<br><i><font size=-2>Posted 07/31/2018. Dave Ohlsson</i></font>
+
+<li>p. 1029. The definition of the mutex ordering rule is too
+strong. It should read simply &ldquo;a program is deadlock free if each thread
+acquires its mutexes in the same order.&rdquo;  In fact, the order that mutexes are
+released does not matter, since V operations never block.
+<br><i><font size=-2>Posted 07/30/2018. Einar Rasmussen</i></font>
+
+</ul>
+
+
+<li><b>Appendix A: Error Handling</b>
+<li><b>Index</b>
+<ul>
+<li>p. 1076.  There should be no index entry for <kbd>RESP</kbd>.
+Instead, it should be for <kbd>RRSP</kbd> with the same information.
+<br><i><font size=-2>Posted 08/26/2015. Yu Zhong</i></font>
+
+</ul>
+</ul>
+
+<!--
+<h3>International Edition ()</h3>
+
+The international edition has somewhat different content and different page numbering.
+
+<ul class="flushlist">
+<li><b>Preface</b>
+<li><b>Chapter 1: A Tour of Computer Systems</b>
+
+<ul>
+</ul>
+
+<li><b>Chapter 2: Representing and Manipulating Information</b>
+
+<ul>
+</ul>
+
+<li><b>Chapter 3: Machine-Level Representation of Programs</b>
+
+<ul>
+</ul>
+
+<li><b>Chapter 4: Processor Architecture</b>
+
+<ul>
+</ul>
+
+
+<li><b>Chapter 5: Optimizing Program Performance</b>
+
+<ul>
+</ul>
+
+<li><b>Chapter 6: The Memory Hierarchy</b>
+
+<ul>
+</ul>
+
+
+<li><b>Chapter 7: Linking</b>
+
+<ul>
+</ul>
+
+<li><b>Chapter 8: Exceptional Control Flow</b>
+
+<ul>
+</ul>
+
+
+<li><b>Chapter 9: Virtual Memory</b>
+
+<ul>
+</ul>
+
+<li><b>Chapter 10: System-Level I/O</b>
+
+<ul>
+</ul>
+
+
+<li><b>Chapter 11: Network Programming</b>
+
+<ul>
+</ul>
+
+<li><b>Chapter 12: Concurrent Programming</b>
+
+<ul>
+</ul>
+
+<li><b>Appendix A: Error Handling</b>
+<li><b>Index</b>
+<li>p. 1076.  There should be no entry for <kbd>RESP</kbd>.  Instead, it should be for <kbd>RRSP</kbd> with the same information.
+<br><i><font size=-2>Posted 08/26/2015. Yu Zhong</i></font>
+
+</ul>
+--> 
+
+<h3>CS:APP3e Instructor's Manual</h3>
+
+<a NAME="im"></a>
+<ul class="flushlist">
+<li><b>Chapter 9: Virtual Memory</b>
+<ul>
+
+<li>p. 107, Problem 9.16. The answer for the first case should be 16
+bytes, rather than 20 bytes. Smallest possible allocated block is 12 bytes
+(|hdr|4-byte payload|ftr|). Smallest free block is 16 bytes
+(|hdr|pred|succ|ftr|). Thus, a minimum block size of 16 bytes. 
+<br><i><font size=-2>Posted 03/01/2016. Daniel Rushton</i></font>
+</ul>
+</ul>
+
+<!-- ----------- -->
+<!-- END CONTENT -->
+<!-- ----------- -->
+<p class="footer">Copyright &copy; 2015
+Randal E. Bryant and David R. O'Hallaron</p>
+</div> <!--content_box-->
+
+<!-- Feed sidebar -->
+<div id=sidebar>
+<h2 class="">Recent articles from the <a href="http://csappbook.blogspot.com">CS:APP blog</a></h2>
+<script
+src="http://feeds.feedburner.com/csapp?format=sigpro&
+nItems=15&
+displayExcerpts=true&
+excerptFormat=plain&
+excerptLength=25&
+displayDate=true&
+dateLocation=below"
+type="text/javascript" ></script>
+</div> <!-- sidebar -->
+
+<! Google Analytics tracking code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5405607-4");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

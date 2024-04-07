@@ -1,0 +1,3320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAXhZoNFJuehVfVg_I1Sjh5kHJvGxrqEnw&sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+	var cmuLatlng = new google.maps.LatLng(40.44350370,-79.94157059999999);
+
+        var myOptions = {
+          center: cmuLatlng,
+          zoom: 2,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions);
+
+	var Marker1 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.4700000,-105.8700000),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Adams State University, 208 Edgemont Blvd, Alamosa, CO 81102"
+        });   
+
+	var Marker2 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.2440064,-84.7451775),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Albion College"
+        });   
+
+	var Marker3 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.9374948,-77.0888029),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"American University"
+        });   
+
+	var Marker4 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.3709104,-72.5170028),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Amherst College"
+        });   
+
+	var Marker5 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.2139148,-81.6795209),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Appalachian State University, 287 Rivers St, Boone, NC 28608"
+        });   
+
+	var Marker6 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.4232051,-111.8879509),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Arizona State University, Tempe, AZ"
+        });   
+
+	var Marker7 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.2049604,-85.4062846),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Ball State University"
+        });   
+
+	var Marker8 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.2079760,-73.3782380),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Bard College at Simon's Rock"
+        });   
+
+	var Marker9 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.8698172,-122.2698332),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Berkeley City College"
+        });   
+
+	var Marker10 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.5630521,-95.1216356),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Benedictine College, Atchison, KS"
+        });   
+
+	var Marker11 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.9203078,-73.2359361),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Bennington College"
+        });   
+
+	var Marker12 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.0894288,-75.9694885),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Binghamton University"
+        });   
+
+	var Marker13 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.9052822,-118.0179682),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Biola University, 13800 Biola Ave, La Mirada, CA 90639"
+        });   
+
+	var Marker14 = new google.maps.Marker({
+          position: new google.maps.LatLng(46.7750745,-100.7574435),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Bismarck State College, Bismarck, ND"
+        });   
+
+	var Marker15 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.8736878,-82.3641116),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Bob Jones University, Greenville, SC"
+        });   
+
+	var Marker16 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.3524927,-71.1185681),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Boston University, Boston MA 02215"
+        });   
+
+	var Marker17 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.9076929,-69.9639971),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Bowdoin College"
+        });   
+
+	var Marker18 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.3777284,-78.9699076),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Bridgewater College, Virginia"
+        });   
+
+	var Marker19 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.8231096,-111.7924237),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Brigham Young University, Rexburg, ID"
+        });   
+
+	var Marker20 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.2338438,-111.6585337),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Brigham Young University, Provo"
+        });   
+
+	var Marker21 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.8261344,-71.4034045),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Brown University, Providence, RI"
+        });   
+
+	var Marker22 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.0281065,-75.3152341),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Bryn Mawr College"
+        });   
+
+	var Marker23 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.7272851,-121.8476117),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Cal State University, Chico"
+        });   
+
+	var Marker24 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.7838235,-118.1140904),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Cal State University, Long Beach"
+        });   
+
+	var Marker25 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.0663797,-118.1684782),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Cal State University, Los Angeles"
+        });   
+
+	var Marker26 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.1372602,-118.1282160),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Cal Tech"
+        });   
+
+	var Marker27 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.7844760,-75.0372035),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Camden County College 200 College Dr, Blackwood, NJ 08012"
+        });   
+
+	var Marker28 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.6911001,-70.3373416),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Cape Cod Community College"
+        });   
+
+	var Marker29 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.4613654,-93.1558264),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Carelton College"
+        });   
+
+	var Marker30 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.4379259,-79.9556424),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Carnegie Mellon University, 5000 Forbes Ave, Pittsburgh, PA 15213"
+        });   
+
+	var Marker31 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.6455553,-84.7791821),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Centre College, Danville, KY"
+        });   
+
+	var Marker32 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.9428975,-123.0350963),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Chemeketa Community College, Salem, OR"
+        });   
+
+	var Marker33 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.7256557,-122.4510586),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"City College of San Francisco"
+        });   
+
+	var Marker34 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.1023471,-117.7092397),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Claremont Mckenna College"
+        });   
+
+	var Marker35 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.2531996,-71.8185895),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Clark University, 950 Main St, Worcester, MA 01610"
+        });   
+
+	var Marker36 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.6613280,-74.9946480),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Clarkson U Potsdam NY"
+        });   
+
+	var Marker37 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.6738437,-82.8368654),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Clemson University"
+        });   
+
+	var Marker38 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.5445959,-96.7311034),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Colorado Technical University (Sioux Falls)"
+        });   
+
+	var Marker39 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.8436125,-88.0687396),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"College of DuPage"
+        });   
+
+	var Marker40 = new google.maps.Marker({
+          position: new google.maps.LatLng(53.9044946,-122.7846417),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"College of New Caledonia (Canada)"
+        });   
+
+	var Marker41 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.8134087,-81.9242711),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"College Of Wooster, Wooster, OH"
+        });   
+
+	var Marker42 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.4534492,-76.4735027),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Cornell University"
+        });   
+
+	var Marker43 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.0060847,-97.1139496),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Dakota State University, 820 Washington Ave N, Madison, SD 57042"
+        });   
+
+	var Marker44 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.6365812,-63.5916555),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Dalhousie University (CA)"
+        });   
+
+	var Marker45 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.0698657,-82.5219986),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Denison University, Granville, OH"
+        });   
+
+	var Marker46 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.8780277,-87.6263891),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Depaul University, Loop Campus"
+        });   
+
+	var Marker47 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.0489281,-111.0937311),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, Arizona"
+        });   
+
+	var Marker48 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.0634090,-117.8029090),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, California"
+        });   
+
+	var Marker49 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9611755,-82.9987942),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, Columbus"
+        });   
+
+	var Marker50 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.8554190,-77.0521289),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, Crystal City VA"
+        });   
+
+	var Marker51 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.5442781,-84.2338093),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, Stockbridge, Georgia"
+        });   
+
+	var Marker52 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.7508391,-88.1535352),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, Naperville, Illinois"
+        });   
+
+	var Marker53 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7127837,-74.0059413),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, New York, NY"
+        });   
+
+	var Marker54 = new google.maps.Marker({
+          position: new google.maps.LatLng(28.5383355,-81.3792365),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, Orlando, FL"
+        });   
+
+	var Marker55 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9525839,-75.1652215),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, Philadelphia"
+        });   
+
+	var Marker56 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.8140177,-96.9488945),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, Irving, Texas"
+        });   
+
+	var Marker57 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.3209801,-111.0937311),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DeVry University, Utah"
+        });   
+
+	var Marker58 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.0824692,-113.6054459),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Dixie College, UT"
+        });   
+
+	var Marker59 = new google.maps.Marker({
+          position: new google.maps.LatLng(49.2036831,-122.9127839),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Douglas College, Canada"
+        });   
+
+	var Marker60 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.4846831,-74.4366424),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Douglass College, NJ"
+        });   
+
+	var Marker61 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7439872,-73.1387242),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Dowling College, 150 Idle Hour Blvd, Oakdale, NY 11769"
+        });   
+
+	var Marker62 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9568207,-75.1898044),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Drexel University, Philadelphia, PA"
+        });   
+
+	var Marker63 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.0074716,-79.0408036),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Duke University, NC"
+        });   
+
+	var Marker64 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.4347920,-79.9891890),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Duquesne University, Pittsburgh, PA"
+        });   
+
+	var Marker65 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.7106543,-72.2081338),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Eastern Connecticut State University, 83 Windham St, Willimantic, CT 06226"
+        });   
+
+	var Marker66 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.3023954,-82.3698530),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"East Tennessee State University"
+        });   
+
+	var Marker67 = new google.maps.Marker({
+          position: new google.maps.LatLng(27.7158860,-82.6881600),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Eckerd College"
+        });   
+
+	var Marker68 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.0982762,-79.5115433),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Elon University, NC"
+        });   
+
+	var Marker69 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.3000350,-121.7621015),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Evergreen Valley College, CA"
+        });   
+
+	var Marker70 = new google.maps.Marker({
+          position: new google.maps.LatLng(26.3749876,-80.1010633),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Florida Atlantic University"
+        });   
+
+	var Marker71 = new google.maps.Marker({
+          position: new google.maps.LatLng(25.7516729,-80.3942212),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Florida International University, Miami, FL"
+        });   
+
+	var Marker72 = new google.maps.Marker({
+          position: new google.maps.LatLng(28.0836269,-80.6081089),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Florida Institute of Technology, Melbourne FL"
+        });   
+
+	var Marker73 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.5344247,-83.8960445),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Fort Valley State University"
+        });   
+
+	var Marker74 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.2977300,-71.4372300),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Framingham State University"
+        });   
+
+	var Marker75 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.3772094,-80.6244016),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Franciscan University of Steubenville"
+        });   
+
+	var Marker76 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.8341900,-77.3075870),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"George Mason University"
+        });   
+
+	var Marker77 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.8997145,-77.0485992),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"George Washington University"
+        });   
+
+	var Marker78 = new google.maps.Marker({
+          position: new google.maps.LatLng(47.6671890,-117.4023849),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Gonzaga University"
+        });   
+
+	var Marker79 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.7782610,-119.4179324),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Green River Community College, CA"
+        });   
+
+	var Marker80 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.1597171,-80.0895066),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Grove City College, Grove City, PA"
+        });   
+
+	var Marker81 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.3241738,-93.9760205),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Gustavus Adolphus College"
+        });   
+
+	var Marker82 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.7127226,-85.4610202),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Hanover College, Hanover, IN"
+        });   
+
+	var Marker83 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.2621191,-76.8802144),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Harrisburg University"
+        });   
+
+	var Marker84 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.3800977,-71.1166286),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Harvard University"
+        });   
+
+	var Marker85 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.0966764,-117.7197785),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Harvey Mudd College, Claremont, CA"
+        });   
+
+	var Marker86 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.4228908,-77.4192758),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Hood College"
+        });   
+
+	var Marker87 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.8627836,-112.4297620),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Idaho State University"
+        });   
+
+	var Marker88 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.1684472,-86.5177323),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Indiana University"
+        });   
+
+	var Marker89 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.8313852,-87.6272216),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Illinois Institute Of Technology"
+        });   
+
+	var Marker90 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.4493697,-76.4713106),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Ithaca College NY"
+        });   
+
+	var Marker91 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.4231906,-78.8669322),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"James Madison University"
+        });   
+
+	var Marker92 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.3272600,-76.6003432),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Johns Hopkins University, Baltimore, MD"
+        });   
+
+	var Marker93 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.6782034,-97.4133314),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Kansas State University"
+        });   
+
+	var Marker94 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.6955044,-74.2287333),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Kean University, Hillside NJ"
+        });   
+
+	var Marker95 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.5105216,-75.7829733),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Kutztown University"
+        });   
+
+	var Marker96 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7032497,-75.2165358),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Lafayette College, Easton, PA"
+        });   
+
+	var Marker97 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.7968791,-122.2629292),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Laney College"
+        });   
+
+	var Marker98 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.1837462,-118.2226309),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Las Positas College"
+        });   
+
+	var Marker99 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.6053370,-75.3764630),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Lehigh University, Bethlehem, PA"
+        });   
+
+	var Marker100 = new google.maps.Marker({
+          position: new google.maps.LatLng(45.4490949,-122.6703120),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Lewis & Clark College"
+        });   
+
+	var Marker101 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.3530446,-79.1769529),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Liberty University"
+        });   
+
+	var Marker102 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.5870879,-123.1147938),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Linn-Benton Community College"
+        });   
+
+	var Marker103 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.2965420,-78.3956100),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Longwood University, Virginia"
+        });   
+
+	var Marker104 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.0053532,-121.8601385),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Los Medanos College"
+        });   
+
+	var Marker105 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.9681000,-118.4212709),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Loyola Marymount University"
+        });   
+
+	var Marker106 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.4150115,-91.1789031),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Lousiana State University (LSU)"
+        });   
+
+	var Marker107 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.0011274,-87.6609006),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Loyola University Chicago"
+        });   
+
+	var Marker108 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.9378927,-93.1690434),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Macalaster University"
+        });   
+
+	var Marker109 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.8392350,-72.7353820),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Marlboro College, Marlboro, VT"
+        });   
+
+	var Marker110 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.1579568,-76.9881939),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Messiah College, 1 College Ave, Mechanicsburg, PA 17055"
+        });   
+
+	var Marker111 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.0101869,-73.1794680),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Middlebury College"
+        });   
+
+	var Marker112 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.0381837,-85.0957911),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Middle Tennessee State University"
+        });   
+
+	var Marker113 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9959936,-76.3535986),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Millersville University"
+        });   
+
+	var Marker114 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.3911238,-121.9729320),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Mission College"
+        });   
+
+	var Marker115 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.9135265,-90.6386297),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Monmouth College"
+        });   
+
+	var Marker116 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.1518421,-77.6196796),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Monroe Community College, NY"
+        });   
+
+	var Marker117 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.6183927,-75.3823238),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Moravian College, 1200 Main St, Bethlehem, PA 18018"
+        });   
+
+	var Marker118 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.9778795,-91.6656232),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Mt. Mercy University, Cedar Rapids, IA"
+        });   
+
+	var Marker119 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.3635034,-75.9071335),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Muhlenberg College"
+        });   
+
+	var Marker120 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.3312841,-71.1428026),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Newbury College"
+        });   
+
+	var Marker121 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7423345,-74.1793409),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"New Jersey Institute of Technology"
+        });   
+
+	var Marker122 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.3068995,-106.7575204),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"New Mexico State University, Las Cruces, NM"
+        });   
+
+	var Marker123 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.0583995,-106.8914159),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"New Mexico Tech, 801 Leroy Pl, Socorro, NM 87801"
+        });   
+
+	var Marker124 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7696926,-73.9825863),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"1855 Broadway, New York, NY 10023"
+        });   
+
+	var Marker125 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7295549,-73.9965887),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"NYU, 50 West Fourth St, New York, NY 10003"
+        });   
+
+	var Marker126 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.7508391,-88.1535352),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"North Central College, Naperville, IL"
+        });   
+
+	var Marker127 = new google.maps.Marker({
+          position: new google.maps.LatLng(46.7608319,-100.7613578),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"North Dakota State University"
+        });   
+
+	var Marker128 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.9805024,-87.7182002),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Northeastern Illinois University"
+        });   
+
+	var Marker129 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.3400750,-71.0895367),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Northeastern University"
+        });   
+
+	var Marker130 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.0522802,-87.6889122),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Northwestern University, Evanston, IL"
+        });   
+
+	var Marker131 = new google.maps.Marker({
+          position: new google.maps.LatLng(26.0865509,-80.1517550),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Nova Southeastern Univ"
+        });   
+
+	var Marker132 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.6743766,-83.2152413),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Oakland University, Rochester, MI"
+        });   
+
+	var Marker133 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9578076,-83.0202802),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Ohio State University, Columbus"
+        });   
+
+	var Marker134 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5304137,-121.9092877),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Ohlone College"
+        });   
+
+	var Marker135 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.2292220,-97.4300330),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Oklahoma State University, Norman"
+        });   
+
+	var Marker136 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.1463797,-96.0008204),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Oklahoma State University, Tulsa"
+        });   
+
+	var Marker137 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7112562,-74.0051758),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Pace University"
+        });   
+
+	var Marker138 = new google.maps.Marker({
+          position: new google.maps.LatLng(47.1472153,-122.4442852),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Pacific Lutheran University"
+        });   
+
+	var Marker139 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.8147955,-77.8653126),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Penn State University, University Park"
+        });   
+
+	var Marker140 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.0551030,-117.7499909),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Pomona College, Pomona, CA"
+        });   
+
+	var Marker141 = new google.maps.Marker({
+          position: new google.maps.LatLng(45.5230622,-122.6764816),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Portland Community College, Rock Creek, Portland, OR"
+        });   
+
+	var Marker142 = new google.maps.Marker({
+          position: new google.maps.LatLng(45.5230622,-122.6764816),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Portland Community College, Sylvania, Portland, OR"
+        });   
+
+	var Marker143 = new google.maps.Marker({
+          position: new google.maps.LatLng(45.5130990,-122.6885447),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Portland State University"
+        });   
+
+	var Marker144 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.3492867,-74.6582332),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Princeton University"
+        });   
+
+	var Marker145 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.2252795,-76.4951412),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Queens University, Canada"
+        });   
+
+	var Marker146 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.3144200,-71.7953700),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Quinsigamond Community College"
+        });   
+
+	var Marker147 = new google.maps.Marker({
+          position: new google.maps.LatLng(45.4830448,-122.6373179),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Reed College"
+        });   
+
+	var Marker148 = new google.maps.Marker({
+          position: new google.maps.LatLng(29.7164461,-95.3992521),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Rice University, Houston, Texas"
+        });   
+
+	var Marker149 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.0889827,-77.6751526),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Rochester Institute of Technology"
+        });   
+
+	var Marker150 = new google.maps.Marker({
+          position: new google.maps.LatLng(28.5999998,-81.3392352),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Rollins University, Winter Park, FL"
+        });   
+
+	var Marker151 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.4819339,-87.3257813),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Rose Hulman Terre Haute IN"
+        });   
+
+	var Marker152 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.5008405,-74.4474174),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Rutgers University - New Brunswick"
+        });   
+
+	var Marker153 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9484052,-75.1217367),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Rutgers University - Camden"
+        });   
+
+	var Marker154 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7201737,-73.7978908),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"St. John's University"
+        });   
+
+	var Marker155 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.6356280,-90.2333685),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"St. Louis University, 1 North Grand Boulevard, Saint Louis, MO 63103"
+        });   
+
+	var Marker156 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.4959801,-73.1637430),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"St. Michaels College, One Winooski Park, Colchester, VT 05439"
+        });   
+
+	var Marker157 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.9483466,-93.1099637),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"St. Paul College, St. Paul, MN"
+        });   
+
+	var Marker158 = new google.maps.Marker({
+          position: new google.maps.LatLng(29.4135826,-98.4485846),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"St. Philips College, 1801 Martin Luther King Dr, San Antonio, TX 78203"
+        });   
+
+	var Marker159 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.5033384,-70.8907494),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Salem State University"
+        });   
+
+	var Marker160 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.7464644,-117.1892039),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"San Diego State University, San Diego, CA"
+        });   
+
+	var Marker161 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.6789476,-115.4988834),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"San Diego State University, Imperial Valley Campus, 720 Heber Ave, Calexico, CA 92231"
+        });   
+
+	var Marker162 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.3229926,-121.8832000),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"San Jose State University"
+        });   
+
+	var Marker163 = new google.maps.Marker({
+          position: new google.maps.LatLng(47.6506821,-122.3053775),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Seattle Pacific University"
+        });   
+
+	var Marker164 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.3604701,-71.0622496),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Sattler College"
+        });   
+
+	var Marker165 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.2079875,-85.9091054),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Sewanee - University of the South"
+        });   
+
+	var Marker166 = new google.maps.Marker({
+          position: new google.maps.LatLng(49.2780937,-122.9198833),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Simon Fraser University (Canada)"
+        });   
+
+	var Marker167 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.6117232,-122.3278382),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Simpson College"
+        });   
+
+	var Marker168 = new google.maps.Marker({
+          position: new google.maps.LatLng(47.6558029,-117.2603252),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Spokane Valley Tech"
+        });   
+
+	var Marker169 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.4283146,-122.1688801),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Stanford University, 450 Serra Mall, Stanford, CA 94305"
+        });   
+
+	var Marker170 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.6850273,-73.8247903),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"State University of New York at Albany"
+        });   
+
+	var Marker171 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.0986867,-75.9179738),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"State University of New York At Binghamton, Binghamton, NY"
+        });   
+
+	var Marker172 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.4553461,-76.5104973),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"State University of New York At Oswego, Oswego, NY"
+        });   
+
+	var Marker173 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.6994873,-73.4529124),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"State University of New York At Plattsburgh, Plattsburgh, NY"
+        });   
+
+	var Marker174 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.4386164,-74.4261043),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"SUNY Orange County Community College"
+        });   
+
+	var Marker175 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7450787,-74.0254858),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Stevens Institute of Technology"
+        });   
+
+	var Marker176 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.9098883,-73.1146681),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Stony Brook University, Stony Brook, NY"
+        });   
+
+	var Marker177 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9061422,-75.3523866),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Swarthmore College, Swarthmore, PA"
+        });   
+
+	var Marker178 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.0450808,-76.1343728),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Syracuse University NY"
+        });   
+
+	var Marker179 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.4567121,-85.5011902),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Taylor University, Upland"
+        });   
+
+	var Marker180 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9808250,-75.1495788),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Temple University Philadelphia"
+        });   
+
+	var Marker181 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.6186806,-96.3364655),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Texas A&M University, College Station"
+        });   
+
+	var Marker182 = new google.maps.Marker({
+          position: new google.maps.LatLng(50.6712202,-120.3666265),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Thompson Rivers University"
+        });   
+
+	var Marker183 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.3953948,-76.6095428),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Towson University"
+        });   
+
+	var Marker184 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.7491321,-72.6924209),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Trinity College, Hartford, CT"
+        });   
+
+	var Marker185 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.4036847,-71.1204820),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Tufts University"
+        });   
+
+	var Marker186 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.3914827,-73.9559721),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Unites States Military Academy, West Point, NY"
+        });   
+
+	var Marker187 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.5021227,-86.8064447),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Alabama at Birmingham"
+        });   
+
+	var Marker188 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.3826665,-94.3733791),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Arkansas, Fort Smith"
+        });   
+
+	var Marker189 = new google.maps.Marker({
+          position: new google.maps.LatLng(49.2515653,-123.2401187),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of British Columbia (Vancouver, BC, Canada)"
+        });   
+
+	var Marker190 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.6635507,-117.8527552),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of California, Irvine (UCI)"
+        });   
+
+	var Marker191 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.0702640,-118.4440562),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of California, Los Angeles (UCLA) 90095"
+        });   
+
+	var Marker192 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.4456946,-119.8048582),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of California, Santa Barbara, Santa Barbara, CA"
+        });   
+
+	var Marker193 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.1329219,-84.5149504),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Cincinnati"
+        });   
+
+	var Marker194 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.8639088,-87.6155372),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Chicago, Chicago, IL"
+        });   
+
+	var Marker195 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.0077396,-105.2555329),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Colorado, Boulder"
+        });   
+
+	var Marker196 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.8962961,-104.8061551),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Colorado, Colorado Springs"
+        });   
+
+	var Marker197 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.6646804,-75.7592616),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Delaware, Newark, DE"
+        });   
+
+	var Marker198 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.6766239,-104.9615253),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Denver, 2199 S University Blvd, Denver, CO 80208"
+        });   
+
+	var Marker199 = new google.maps.Marker({
+          position: new google.maps.LatLng(29.6436325,-82.3549302),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Florida"
+        });   
+
+	var Marker200 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.0927646,-88.2178545),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Illinois at Urbana-Champaign"
+        });   
+
+	var Marker201 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.8749605,-87.6581129),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Illinois, 1200 W Harrison St, Chicago, IL 60607"
+        });   
+
+	var Marker202 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.0156511,-84.5051770),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Kentucky, Lexington, KY"
+        });   
+
+	var Marker203 = new google.maps.Marker({
+          position: new google.maps.LatLng(49.6786136,-112.8596223),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Lethbridge (Canada)"
+        });   
+
+	var Marker204 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.2122761,-85.7585023),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Louisville"
+        });   
+
+	var Marker205 = new google.maps.Marker({
+          position: new google.maps.LatLng(31.0560132,-97.4644530),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Mary Hardin-Baylor, 900 College St, Belton TX"
+        });   
+
+	var Marker206 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.3732185,-76.3652821),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Maryland, Baltimore Cty"
+        });   
+
+	var Marker207 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.9799670,-76.9232562),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Maryland, College Park"
+        });   
+
+	var Marker208 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.6553380,-71.3292098),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Massachusetts, Lowell "
+        });   
+
+	var Marker209 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.3951291,-72.5312372),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Massachusetts Amherst, Amherst, MA 01003"
+        });   
+
+	var Marker210 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.1187220,-89.9381170),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Memphis"
+        });   
+
+	var Marker211 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.0161750,-83.7062692),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Michigan, Flint"
+        });   
+
+	var Marker212 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.9751418,-93.2276925),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Minnesota, Minneapolis"
+        });   
+
+	var Marker213 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.3679406,-89.5408280),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Mississippi, University, MS 38677"
+        });   
+
+	var Marker214 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7953392,-98.6837170),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Nebraska, Lincoln"
+        });   
+
+	var Marker215 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.2549998,-95.9786222),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Nebraska, Omaha"
+        });   
+
+	var Marker216 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.5961660,-105.2107226),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of New Mexico"
+        });   
+
+	var Marker217 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.0311171,-90.0635827),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of New Orleans, 2000 Lakeshore Dr, New Orleans, LA 70148"
+        });   
+
+	var Marker218 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.6162921,-82.5673127),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of North Carolina, Asheville"
+        });   
+
+	var Marker219 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.2661204,-81.5072314),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of North Florida"
+        });   
+
+	var Marker220 = new google.maps.Marker({
+          position: new google.maps.LatLng(47.9222660,-97.0735139),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of North Dakota, Grand Forks, ND"
+        });   
+
+	var Marker221 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.8715218,-97.5672431),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Oklahoma"
+        });   
+
+	var Marker222 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.0459317,-123.0706073),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Oregon, Eugene, OR"
+        });   
+
+	var Marker223 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9522188,-75.1932137),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Pennsylvania"
+        });   
+
+	var Marker224 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.4443533,-79.9608350),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Pittsburgh"
+        });   
+
+	var Marker225 = new google.maps.Marker({
+          position: new google.maps.LatLng(18.3961955,-66.0512313),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Puerto Rico, Rio Piedras "
+        });   
+
+	var Marker226 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.4860647,-71.5308537),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Rhode Island"
+        });   
+
+	var Marker227 = new google.maps.Marker({
+          position: new google.maps.LatLng(50.4201512,-104.5887159),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Regina (Canada)"
+        });   
+
+	var Marker228 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.9380040,-77.3783789),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Rochester"
+        });   
+
+	var Marker229 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.7464644,-117.1892039),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of San Diego, San Diego, CA"
+        });   
+
+	var Marker230 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.9993292,-81.0245958),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of South Carolina, Columbia"
+        });   
+
+	var Marker231 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.0223519,-118.2851170),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Southern California"
+        });   
+
+	var Marker232 = new google.maps.Marker({
+          position: new google.maps.LatLng(31.3298941,-89.3340439),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Southern Mississippi"
+        });   
+
+	var Marker233 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.2858682,-97.7356543),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Texas, Austin"
+        });   
+
+	var Marker234 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.9857619,-96.7500993),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Texas, Dallas"
+        });   
+
+	var Marker235 = new google.maps.Marker({
+          position: new google.maps.LatLng(29.5676137,-98.6050736),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Texas at San Antonio, 1 UTSA Circle, San Antonio, TX 78249"
+        });   
+
+	var Marker236 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.6199500,-83.6181182),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Toledo, Ohio"
+        });   
+
+	var Marker237 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7705000,-111.8354722),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Utah, Salt Lake City, UT"
+        });   
+
+	var Marker238 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.0356981,-78.5035945),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Virginia, Charlottesville, VA"
+        });   
+
+	var Marker239 = new google.maps.Marker({
+          position: new google.maps.LatLng(47.6698745,-122.3102213),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Washington, Seattle"
+        });   
+
+	var Marker240 = new google.maps.Marker({
+          position: new google.maps.LatLng(47.7589719,-122.1907070),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Washington, Bothell"
+        });   
+
+	var Marker241 = new google.maps.Marker({
+          position: new google.maps.LatLng(49.8916123,-97.1534595),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Winnipeg"
+        });   
+
+	var Marker242 = new google.maps.Marker({
+          position: new google.maps.LatLng(44.7984044,-91.5015885),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Wisconsin, 105 Garfield Ave, Eau Claire, WI"
+        });   
+
+	var Marker243 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.0447617,-89.4245627),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Wisconsin, Madison"
+        });   
+
+	var Marker244 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7609264,-111.8270486),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Utah State University"
+        });   
+
+	var Marker245 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.1447034,-86.8026551),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Vanderbilt University"
+        });   
+
+	var Marker246 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.6865267,-73.8981091),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Vassar College, 124 Raymond Ave, Poughkeepsie, NY 12604"
+        });   
+
+	var Marker247 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.9398334,-72.6045066),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Vermont Technical College"
+        });   
+
+	var Marker248 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.0349590,-75.3440830),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Villanova University PA"
+        });   
+
+	var Marker249 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5451839,-77.4508188),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Virginia Commonwealth University, Richmond, VA"
+        });   
+
+	var Marker250 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.2068203,-80.4080343),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Virginia Tech Blacksburg, VA"
+        });   
+
+	var Marker251 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.0074033,-81.7968297),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Virginia Western Community College"
+        });   
+
+	var Marker252 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.1355052,-80.2791958),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Wake Forest University"
+        });   
+
+	var Marker253 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.7898776,-79.4458935),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Washington & Lee University"
+        });   
+
+	var Marker254 = new google.maps.Marker({
+          position: new google.maps.LatLng(46.7298283,-117.1745403),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Washington State University"
+        });   
+
+	var Marker255 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.6470653,-90.3026346),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Washington University, 1 Brookings Dr, St. Louis, MO 63130"
+        });   
+
+	var Marker256 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.2930684,-71.3085829),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Wellesley College, 106 Central St, Wellesley, MA 02481"
+        });   
+
+	var Marker257 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9109855,-75.5461367),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"West Chester University, West Chester, PA"
+        });   
+
+	var Marker258 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.9803342,-101.9188024),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"West Texas A and M Canyon TX"
+        });   
+
+	var Marker259 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.4712685,-90.6851992),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Western Illinois University, Macomb, IL"
+        });   
+
+	var Marker260 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.2831778,-85.6152186),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Western Michigan University"
+        });   
+
+	var Marker261 = new google.maps.Marker({
+          position: new google.maps.LatLng(48.7294204,-122.3420963),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Western Washington University, Bellingham, WA"
+        });   
+
+	var Marker262 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7289042,-111.8796574),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Westminster College, Utah"
+        });   
+
+	var Marker263 = new google.maps.Marker({
+          position: new google.maps.LatLng(48.7953258,-122.4938573),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Whatcom Community College (Washington)"
+        });   
+
+	var Marker264 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.8691241,-88.0902069),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Wheaton College (Illinois)"
+        });   
+
+	var Marker265 = new google.maps.Marker({
+          position: new google.maps.LatLng(46.0705799,-118.3306352),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Whitman College"
+        });   
+
+	var Marker266 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.9787488,-118.0322857),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Whittier College"
+        });   
+
+	var Marker267 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.7120196,-73.2036898),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Williams College, Williamstown, MA"
+        });   
+
+	var Marker268 = new google.maps.Marker({
+          position: new google.maps.LatLng(42.2625932,-71.8022934),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Worcester Polytechnic Institute, Institute Rd, Worcester, MA"
+        });   
+
+	var Marker269 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.7875367,-84.0651383),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Wright State University, Dayton, OH"
+        });   
+
+	var Marker270 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.8516512,-73.9312468),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Yeshiva University, 500 W 185th St, New York, NY 10033"
+        });   
+
+	var Marker271 = new google.maps.Marker({
+          position: new google.maps.LatLng(57.0145665,9.9818527),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Aalborg University, Denmark"
+        });   
+
+	var Marker272 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.7138320,73.0246540),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Air University (Pakistan)"
+        });   
+
+	var Marker273 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.2833633,127.0465105),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Ajou University (South Korea)"
+        });   
+
+	var Marker274 = new google.maps.Marker({
+          position: new google.maps.LatLng(29.8873560,39.3206241),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Aljouf University,  Al-Jawf, Saudi Arabia"
+        });   
+
+	var Marker275 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.3330620,36.2410645),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Al-Albayt University (Jordan)"
+        });   
+
+	var Marker276 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.8817173,14.5197609),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"American University of Malta, Triq Dom Mintoff, Bormla, BML 1013"
+        });   
+
+	var Marker277 = new google.maps.Marker({
+          position: new google.maps.LatLng(25.7887739,55.9944339),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"American University of Ras Al Khaimah (U.A.E)"
+        });   
+
+	var Marker278 = new google.maps.Marker({
+          position: new google.maps.LatLng(13.7563309,100.5017651),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Assumption University, Bang Kapa District, Bangkok, Thailand"
+        });   
+
+	var Marker279 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.8159752,32.7244407),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Atilim University (Ankara, Turkey)"
+        });   
+
+	var Marker280 = new google.maps.Marker({
+          position: new google.maps.LatLng(-35.2815110,149.1149010),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"ANU, Canberra ACT 0200, Australia"
+        });   
+
+	var Marker281 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.0139780,34.7471860),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Bar Ilan University (Israel)"
+        });   
+
+	var Marker282 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.8864835,32.6541275),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Baskent University (Turkey)"
+        });   
+
+	var Marker283 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9627960,116.3581030),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Beijing University of Posts and Telecommunications"
+        });   
+
+	var Marker284 = new google.maps.Marker({
+          position: new google.maps.LatLng(31.7101221,35.2023263),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Bethlehem University"
+        });   
+
+	var Marker285 = new google.maps.Marker({
+          position: new google.maps.LatLng(28.3580163,75.5887989),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Birla Institute of Technology and Science (Pilani, India)"
+        });   
+
+	var Marker286 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.0223946,31.2068151),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Cairo University (Egypt)"
+        });   
+
+	var Marker287 = new google.maps.Marker({
+          position: new google.maps.LatLng(24.9575370,121.2410215),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Chung-Yuan Christian University (Taiwan)"
+        });   
+
+	var Marker288 = new google.maps.Marker({
+          position: new google.maps.LatLng(25.2854473,51.5310398),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Carnegie Mellon University (Doha, Qatar)"
+        });   
+
+	var Marker289 = new google.maps.Marker({
+          position: new google.maps.LatLng(-1.9353680,30.1585791),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"CMU-Africa"
+        });   
+
+	var Marker290 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.5237834,114.3611861),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Central China Normal University (China)"
+        });   
+
+	var Marker291 = new google.maps.Marker({
+          position: new google.maps.LatLng(22.4196250,114.2067606),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Chinese University of Hong Kong"
+        });   
+
+	var Marker292 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9127930,116.5565810),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Communication University of China"
+        });   
+
+	var Marker293 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.8769137,121.5319155),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Dalian University of Technology (China)"
+        });   
+
+	var Marker294 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.2410864,127.1775537),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Dankook University Yongin Korea"
+        });   
+
+	var Marker295 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5574771,127.0020518),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Dongguk University Korea"
+        });   
+
+	var Marker296 = new google.maps.Marker({
+          position: new google.maps.LatLng(49.8728253,8.6511929),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Darmstadt University of Technology (TUD), Darmstadt, Germany"
+        });   
+
+	var Marker297 = new google.maps.Marker({
+          position: new google.maps.LatLng(1.3520830,103.8198360),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"DigiPen Institute of Technology (Singapore)"
+        });   
+
+	var Marker298 = new google.maps.Marker({
+          position: new google.maps.LatLng(31.2276670,121.4068290),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"East China Normal University (China)"
+        });   
+
+	var Marker299 = new google.maps.Marker({
+          position: new google.maps.LatLng(48.7142971,2.2112917),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"École Polytechnique (France)"
+        });   
+
+	var Marker300 = new google.maps.Marker({
+          position: new google.maps.LatLng(49.0350546,2.0697464),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"EISTI (France)"
+        });   
+
+	var Marker301 = new google.maps.Marker({
+          position: new google.maps.LatLng(48.8960876,2.2356593),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"ESILV (France)"
+        });   
+
+	var Marker302 = new google.maps.Marker({
+          position: new google.maps.LatLng(-2.1481458,-79.9644885),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"ESPOL (Ecuador)"
+        });   
+
+	var Marker303 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.4046859,19.7063579),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Epoka University (Albania)"
+        });   
+
+	var Marker304 = new google.maps.Marker({
+          position: new google.maps.LatLng(47.4064873,8.5089029),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"ETH (Switzerland)"
+        });   
+
+	var Marker305 = new google.maps.Marker({
+          position: new google.maps.LatLng(-34.9235325,138.6211340),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Flinders University (Australia)"
+        });   
+
+	var Marker306 = new google.maps.Marker({
+          position: new google.maps.LatLng(10.7267331,106.7202972),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Fulbright University Vietnam"
+        });   
+
+	var Marker307 = new google.maps.Marker({
+          position: new google.maps.LatLng(31.2985307,121.5014465),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Fudan University (China)"
+        });   
+
+	var Marker308 = new google.maps.Marker({
+          position: new google.maps.LatLng(23.4079972,116.6378350),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Guangdong Technion Israel Institute of Technology (China)"
+        });   
+
+	var Marker309 = new google.maps.Marker({
+          position: new google.maps.LatLng(23.2759012,113.6721525),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Guangzhou University (China)"
+        });   
+
+	var Marker310 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.2272692,126.8407202),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Gwangju Institute Science and Technology (South Korea)"
+        });   
+
+	var Marker311 = new google.maps.Marker({
+          position: new google.maps.LatLng(24.8614622,67.0099388),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Habib University, Karachi, Pakistan"
+        });   
+
+	var Marker312 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9333635,32.8597419),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Hacettepe University, Ankara, Turkey"
+        });   
+
+	var Marker313 = new google.maps.Marker({
+          position: new google.maps.LatLng(25.3139640,51.4415930),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Hamad Bin Khalifa University (Qatar)"
+        });   
+
+	var Marker314 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.1030897,129.3884472),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Handong Global University ((South Korea)"
+        });   
+
+	var Marker315 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.2868250,120.1405280),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Hangzhou Dianzi University (China)"
+        });   
+
+	var Marker316 = new google.maps.Marker({
+          position: new google.maps.LatLng(45.7470436,126.6334305),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Harbin Institute of Technology (China)"
+        });   
+
+	var Marker317 = new google.maps.Marker({
+          position: new google.maps.LatLng(31.7792990,35.1971430),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Hebrew University of Jerusalem (Israel)"
+        });   
+
+	var Marker318 = new google.maps.Marker({
+          position: new google.maps.LatLng(4.2104840,101.9757660),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"HELP University College (Malaysia)"
+        });   
+
+	var Marker319 = new google.maps.Marker({
+          position: new google.maps.LatLng(28.1828480,112.9418170),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Hunan University (China)"
+        });   
+
+	var Marker320 = new google.maps.Marker({
+          position: new google.maps.LatLng(13.5552932,80.0266900),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Indian Institute of Information Technology Sri City (India)"
+        });   
+
+	var Marker321 = new google.maps.Marker({
+          position: new google.maps.LatLng(13.0218597,77.5671423),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Indian Institute of Science (India)"
+        });   
+
+	var Marker322 = new google.maps.Marker({
+          position: new google.maps.LatLng(15.4225519,73.9798471),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Indian Institute of Technology Goa (India)"
+        });   
+
+	var Marker323 = new google.maps.Marker({
+          position: new google.maps.LatLng(22.3149274,87.3105311),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Indian Institute of Technology Kharagpur (India)"
+        });   
+
+	var Marker324 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.9686169,76.4733050),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Indian Institute of Technology Ropar (India)"
+        });   
+
+	var Marker325 = new google.maps.Marker({
+          position: new google.maps.LatLng(28.5458541,77.2731762),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Indraprastha Institute of Information Technology (India)"
+        });   
+
+	var Marker326 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5267916,22.3725067),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Informatics and Telecommunication University of Peloponnese"
+        });   
+
+	var Marker327 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.4500221,126.6534880),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Inha University, 253 Yonghyeon-dong, Nam-gu, Incheon, South Korea"
+        });   
+
+	var Marker328 = new google.maps.Marker({
+          position: new google.maps.LatLng(-23.5505199,-46.6333094),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Inspir, 300 Quata Street, Sao Paulo, Brazil"
+        });   
+
+	var Marker329 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.1579438,-8.6291053),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Instituto Superior de Enginharia do Porto (Portugal)"
+        });   
+
+	var Marker330 = new google.maps.Marker({
+          position: new google.maps.LatLng(3.2239825,101.6882034),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"International Islamic University of Malaysia"
+        });   
+
+	var Marker331 = new google.maps.Marker({
+          position: new google.maps.LatLng(4.9110092,114.9190547),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Institut Teknologi Gadong Brunei"
+        });   
+
+	var Marker332 = new google.maps.Marker({
+          position: new google.maps.LatLng(23.9481020,90.3792600),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Islamic University of Technology (Bangladesh)"
+        });   
+
+	var Marker333 = new google.maps.Marker({
+          position: new google.maps.LatLng(22.7258536,120.4063526),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"I-Shou University, Taiwan"
+        });   
+
+	var Marker334 = new google.maps.Marker({
+          position: new google.maps.LatLng(55.6596350,12.5909580),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"IT University of Copenhagen (Denmark)"
+        });   
+
+	var Marker335 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.1975810,119.4662960),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Jiangsu University of Technology (China)"
+        });   
+
+	var Marker336 = new google.maps.Marker({
+          position: new google.maps.LatLng(23.1265101,113.3476302),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Jinan University (Guangzhou, China)"
+        });   
+
+	var Marker337 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.8534841,128.4799488),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Keimyung University (South Korea)"
+        });   
+
+	var Marker338 = new google.maps.Marker({
+          position: new google.maps.LatLng(13.8361545,100.5633676),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Kasetsart University ladyaow chatuchak Bangkok, Thailand"
+        });   
+
+	var Marker339 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.3504119,127.3845475),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"KAIST Daejeon Korea"
+        });   
+
+	var Marker340 = new google.maps.Marker({
+          position: new google.maps.LatLng(54.3435076,10.1149433),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Kiel University (Germany)"
+        });   
+
+	var Marker341 = new google.maps.Marker({
+          position: new google.maps.LatLng(59.3293235,18.0685808),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Royal Institute of Technology Stockholm Sweden"
+        });   
+
+	var Marker342 = new google.maps.Marker({
+          position: new google.maps.LatLng(24.4473556,54.3949088),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Khalifa University of Science and Technology (UAE)"
+        });   
+
+	var Marker343 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5486706,127.0759024),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Konkuk University 120 Neungdong-ro Gwangjin-gu Seoul Korea"
+        });   
+
+	var Marker344 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5907990,127.0277773),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Korea University "
+        });   
+
+	var Marker345 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.6583599,126.8320201),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Korea Aerospace University Goyang-city Gyeonggi-do Korea"
+        });   
+
+	var Marker346 = new google.maps.Marker({
+          position: new google.maps.LatLng(29.3396116,47.9140915),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Kuwait University "
+        });   
+
+	var Marker347 = new google.maps.Marker({
+          position: new google.maps.LatLng(29.3758590,47.9774052),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Kuwait College of Science and Technology, Kuwait City, Kuwait"
+        });   
+
+	var Marker348 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.8888360,128.6102997),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Kyungpook National University, Korea"
+        });   
+
+	var Marker349 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.7531366,-73.9716411),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Lebanese American University"
+        });   
+
+	var Marker350 = new google.maps.Marker({
+          position: new google.maps.LatLng(31.5546061,74.3571581),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"LUMS School of Science and Engineering, Lahore, Pakistan"
+        });   
+
+	var Marker351 = new google.maps.Marker({
+          position: new google.maps.LatLng(-33.7756994,151.1131306),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Macquarie University (Australia)"
+        });   
+
+	var Marker352 = new google.maps.Marker({
+          position: new google.maps.LatLng(13.8199206,100.0621676),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Mahidol University International College, Nakhon Pathom, Thailand"
+        });   
+
+	var Marker353 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.0040341,29.0197118),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Marmara University (Turkey)"
+        });   
+
+	var Marker354 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9333635,32.8597419),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Middle East Technical University (Ankara, Turkey)"
+        });   
+
+	var Marker355 = new google.maps.Marker({
+          position: new google.maps.LatLng(55.9297243,37.5199434),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Moscow Institute of Physics and Technology (Russia)"
+        });   
+
+	var Marker356 = new google.maps.Marker({
+          position: new google.maps.LatLng(2.9213180,101.6559349),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Multimedia University (MMU), Cyberjaya (Malaysia)"
+        });   
+
+	var Marker357 = new google.maps.Marker({
+          position: new google.maps.LatLng(28.2193841,113.0002914),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"National University of Defense Technology (Hunan, China)"
+        });   
+
+	var Marker358 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.0356169,118.8533880),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Nanjing University of Science and Technology (China)"
+        });   
+
+	var Marker359 = new google.maps.Marker({
+          position: new google.maps.LatLng(22.9988416,120.2195148),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"National Cheng Kung University (Taiwan)"
+        });   
+
+	var Marker360 = new google.maps.Marker({
+          position: new google.maps.LatLng(25.0136906,121.5406792),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"NTUST (Taiwan)"
+        });   
+
+	var Marker361 = new google.maps.Marker({
+          position: new google.maps.LatLng(25.0329694,121.5654177),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"National Tsing Hua University of Taiwan Taipei"
+        });   
+
+	var Marker362 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9098040,119.5442330),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"National University of Defense Technology, China"
+        });   
+
+	var Marker363 = new google.maps.Marker({
+          position: new google.maps.LatLng(22.6272784,120.3014353),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"National University of Kaohsiung, Gaoxiongdaxue, Kaohsiung City, Taiwan"
+        });   
+
+	var Marker364 = new google.maps.Marker({
+          position: new google.maps.LatLng(47.9230352,106.9188949),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"National University of Mongolia"
+        });   
+
+	var Marker365 = new google.maps.Marker({
+          position: new google.maps.LatLng(1.2936452,103.7749621),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"National University of Singapore (NUS)"
+        });   
+
+	var Marker366 = new google.maps.Marker({
+          position: new google.maps.LatLng(24.2991738,54.6972774),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"New York University, Abu Dhabi"
+        });   
+
+	var Marker367 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9919289,116.3102757),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Peking University (China)"
+        });   
+
+	var Marker368 = new google.maps.Marker({
+          position: new google.maps.LatLng(12.9344948,77.5345164),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"PES University (India)"
+        });   
+
+	var Marker369 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.0138857,129.3231836),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Pohang University of Science and Technology (South Korea)"
+        });   
+
+	var Marker370 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.8061131,-6.7567380),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Polytechnic Institute of Braganca (Portugal)"
+        });   
+
+	var Marker371 = new google.maps.Marker({
+          position: new google.maps.LatLng(-22.9791548,-43.2309477),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"PUC-Rio (Brazil)"
+        });   
+
+	var Marker372 = new google.maps.Marker({
+          position: new google.maps.LatLng(19.4436005,-70.6843785),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"PUCMM (Dominican Republic)"
+        });   
+
+	var Marker373 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.2338855,129.0797747),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Pusan National University (South Korea)"
+        });   
+
+	var Marker374 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9696062,116.3188145),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Renmin University of China"
+        });   
+
+	var Marker375 = new google.maps.Marker({
+          position: new google.maps.LatLng(64.1404869,-21.9493575),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Reykjavik University (Iceland)"
+        });   
+
+	var Marker376 = new google.maps.Marker({
+          position: new google.maps.LatLng(24.7999860,67.1112175),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Salim Habib University (Pakistan)"
+        });   
+
+	var Marker377 = new google.maps.Marker({
+          position: new google.maps.LatLng(6.9219487,79.9623450),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"SAITM Off Chandrika Kumaratunga Mawatha, Malabe, Sri Lanka"
+        });   
+
+	var Marker378 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5665350,126.9779692),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"SNU, Seoul, South Korea"
+        });   
+
+	var Marker379 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.6316867,127.0774985),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Seoul National University of Science and Technology (South Korea)"
+        });   
+
+	var Marker380 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.6716339,117.0593187),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Shandong University (China)"
+        });   
+
+	var Marker381 = new google.maps.Marker({
+          position: new google.maps.LatLng(31.1988400,121.4325670),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Shanghai JiaoTong University (China)"
+        });   
+
+	var Marker382 = new google.maps.Marker({
+          position: new google.maps.LatLng(22.5350039,113.9395670),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Shenzhen University (China)"
+        });   
+
+	var Marker383 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.6639640,104.0710220),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Sichuan University (China)"
+        });   
+
+	var Marker384 = new google.maps.Marker({
+          position: new google.maps.LatLng(29.7222318,52.5972479),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Shiraz University (Iran)"
+        });   
+
+	var Marker385 = new google.maps.Marker({
+          position: new google.maps.LatLng(1.2962727,103.8501578),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Singapore Management University"
+        });   
+
+	var Marker386 = new google.maps.Marker({
+          position: new google.maps.LatLng(14.0208391,100.5250276),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Sirindhorn International Institute of Technology, Pathum Thani, Thailand"
+        });   
+
+	var Marker387 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5509442,126.9410023),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Sogang University (South Korea)"
+        });   
+
+	var Marker388 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.4997186,126.9414329),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Soongsil University 369 Sang-doro Dongjak-gu Seoul Korea"
+        });   
+
+	var Marker389 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.8293700,30.5262820),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Süleyman Demirel University (Isparta, Turkey) "
+        });   
+
+	var Marker390 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5665350,126.9779692),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Sung Kyun Kwan University, Seoul, Korea"
+        });   
+
+	var Marker391 = new google.maps.Marker({
+          position: new google.maps.LatLng(36.7691930,126.9322626),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Soonchunhyang University (South Korea)"
+        });   
+
+	var Marker392 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5912999,127.0221068),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Sungshin Women's University"
+        });   
+
+	var Marker393 = new google.maps.Marker({
+          position: new google.maps.LatLng(24.4959806,39.7162959),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Taibah University (Saudi Arabia)"
+        });   
+
+	var Marker394 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.7789490,35.0196480),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Technion Haifa Israel"
+        });   
+
+	var Marker395 = new google.maps.Marker({
+          position: new google.maps.LatLng(14.0769334,100.5988024),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Thammasat University (Thailand)"
+        });   
+
+	var Marker396 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.0839610,117.7086310),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Tianjin University (China)"
+        });   
+
+	var Marker397 = new google.maps.Marker({
+          position: new google.maps.LatLng(22.7195687,75.8577258),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Truba College of Engineering & Technology (Indore, India)"
+        });   
+
+	var Marker398 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9990443,116.3246671),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Tsinghua University (China)"
+        });   
+
+	var Marker399 = new google.maps.Marker({
+          position: new google.maps.LatLng(4.3320315,101.1437320),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Tunku Abdul Rahman College (Malaysia)"
+        });   
+
+	var Marker400 = new google.maps.Marker({
+          position: new google.maps.LatLng(0.2933469,101.7068294),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"UIN Suska Riau (Indonesia)"
+        });   
+
+	var Marker401 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.5734514,129.1896490),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Ulsan National Institute of Science and Technology (South Korea)"
+        });   
+
+	var Marker402 = new google.maps.Marker({
+          position: new google.maps.LatLng(32.4570935,74.5053619),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"UMT Sialkot (Pakistan)"
+        });   
+
+	var Marker403 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.7325996,-9.1603293),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universida de Nova de Lisboa (Portugal)"
+        });   
+
+	var Marker404 = new google.maps.Marker({
+          position: new google.maps.LatLng(19.5921154,-99.2480069),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidad Autonoma Metropolitana, Mexico City, Mexico"
+        });   
+
+	var Marker405 = new google.maps.Marker({
+          position: new google.maps.LatLng(-36.8294765,-73.0341825),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidad de Concepcion (Chile)"
+        });   
+
+	var Marker406 = new google.maps.Marker({
+          position: new google.maps.LatLng(9.9372049,-84.0508641),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidad de Costa Rica (Costa Rica)"
+        });   
+
+	var Marker407 = new google.maps.Marker({
+          position: new google.maps.LatLng(-23.5613991,-46.7307891),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidade de São Paulo (Brazil)"
+        });   
+
+	var Marker408 = new google.maps.Marker({
+          position: new google.maps.LatLng(-16.3505820,-71.5618242),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidad Nacional de San Agustin, Arequipa (Peru)"
+        });   
+
+	var Marker409 = new google.maps.Marker({
+          position: new google.maps.LatLng(6.2477611,-75.5902541),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidad Pontificia Bolivariana, Medellin, COLOMBIA"
+        });   
+
+	var Marker410 = new google.maps.Marker({
+          position: new google.maps.LatLng(-15.8000270,-47.8941949),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidade Catolica de Brasia (Brazil)"
+        });   
+
+	var Marker411 = new google.maps.Marker({
+          position: new google.maps.LatLng(-22.9043971,-43.1093638),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidade Federal Fluminense, Icarai Niteroi, Brazil"
+        });   
+
+	var Marker412 = new google.maps.Marker({
+          position: new google.maps.LatLng(-22.8626877,-43.2258954),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidade Federal do Rio de Janeiro (Brazil)"
+        });   
+
+	var Marker413 = new google.maps.Marker({
+          position: new google.maps.LatLng(-20.5044054,-54.6141429),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universidade Federal de Mato Grosso do Sul (Brazil)"
+        });   
+
+	var Marker414 = new google.maps.Marker({
+          position: new google.maps.LatLng(-7.9355862,112.6507316),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universitas Bina Nusantara (Indonesia)"
+        });   
+
+	var Marker415 = new google.maps.Marker({
+          position: new google.maps.LatLng(48.8566140,2.3522219),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universite Denis Diderot Paris France"
+        });   
+
+	var Marker416 = new google.maps.Marker({
+          position: new google.maps.LatLng(43.7171992,7.2691212),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universite Henri Poincare, Nancy, France"
+        });   
+
+	var Marker417 = new google.maps.Marker({
+          position: new google.maps.LatLng(45.1986790,5.7442725),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universite Joseph Fourier Grenoble France"
+        });   
+
+	var Marker418 = new google.maps.Marker({
+          position: new google.maps.LatLng(3.1151270,101.6570701),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universiti Kebangsaan Malaysia (UKM)"
+        });   
+
+	var Marker419 = new google.maps.Marker({
+          position: new google.maps.LatLng(1.4611629,110.4526024),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universiti Malaysia Sarawak (UNIMAS)"
+        });   
+
+	var Marker420 = new google.maps.Marker({
+          position: new google.maps.LatLng(3.1390030,101.6868550),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"National Defense University of Malaysia Kuala Lumpur"
+        });   
+
+	var Marker421 = new google.maps.Marker({
+          position: new google.maps.LatLng(3.0020581,101.7169770),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universiti Putra Malaysia"
+        });   
+
+	var Marker422 = new google.maps.Marker({
+          position: new google.maps.LatLng(4.2104840,101.9757660),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universiti Sains Islam Malaysia"
+        });   
+
+	var Marker423 = new google.maps.Marker({
+          position: new google.maps.LatLng(2.2745268,102.2812875),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universiti Teknikal Malaysia Melaka"
+        });   
+
+	var Marker424 = new google.maps.Marker({
+          position: new google.maps.LatLng(1.5592456,103.6377186),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universiti Teknologi Malaysia"
+        });   
+
+	var Marker425 = new google.maps.Marker({
+          position: new google.maps.LatLng(2.9935180,101.7874058),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universiti Tenaga Nasional (Kajang, Malaysia)"
+        });   
+
+	var Marker426 = new google.maps.Marker({
+          position: new google.maps.LatLng(1.5645927,103.6312069),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universiti Tun Hussein Onn Malaysia"
+        });   
+
+	var Marker427 = new google.maps.Marker({
+          position: new google.maps.LatLng(2.9349384,101.7714879),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universiti Utara Malaysia"
+        });   
+
+	var Marker428 = new google.maps.Marker({
+          position: new google.maps.LatLng(51.5245592,-0.1340401),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University College London (UK)"
+        });   
+
+	var Marker429 = new google.maps.Marker({
+          position: new google.maps.LatLng(3.4516467,-76.5319854),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University ICESI Cali (Colombia)"
+        });   
+
+	var Marker430 = new google.maps.Marker({
+          position: new google.maps.LatLng(49.8672694,8.6381765),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Applied Science Darmstadt"
+        });   
+
+	var Marker431 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.4947611,139.9298096),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Aizuwakamatsu Japan"
+        });   
+
+	var Marker432 = new google.maps.Marker({
+          position: new google.maps.LatLng(52.3566559,4.9569505),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Amsterdam (Netherlands)"
+        });   
+
+	var Marker433 = new google.maps.Marker({
+          position: new google.maps.LatLng(22.4715718,91.7876793),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Chittagong (Bangladesh)"
+        });   
+
+	var Marker434 = new google.maps.Marker({
+          position: new google.maps.LatLng(55.6852000,12.5727710),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Copenhagen (Denmark)"
+        });   
+
+	var Marker435 = new google.maps.Marker({
+          position: new google.maps.LatLng(9.9369824,-84.0510284),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Costa Rica"
+        });   
+
+	var Marker436 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.1600014,33.3770175),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Cyprus"
+        });   
+
+	var Marker437 = new google.maps.Marker({
+          position: new google.maps.LatLng(51.4277172,6.8010080),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Duisburg-Essen"
+        });   
+
+	var Marker438 = new google.maps.Marker({
+          position: new google.maps.LatLng(45.1915639,5.7672336),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Grenoble"
+        });   
+
+	var Marker439 = new google.maps.Marker({
+          position: new google.maps.LatLng(64.1404869,-21.9493575),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Iceland "
+        });   
+
+	var Marker440 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.3750804,126.6328140),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Incheon (South Korea)"
+        });   
+
+	var Marker441 = new google.maps.Marker({
+          position: new google.maps.LatLng(33.9780550,72.9127842),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Haripur (Pakistan)"
+        });   
+
+	var Marker442 = new google.maps.Marker({
+          position: new google.maps.LatLng(10.7760022,106.6675579),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Information Technology (Vietnam)"
+        });   
+
+	var Marker443 = new google.maps.Marker({
+          position: new google.maps.LatLng(53.8070423,-1.5534731),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Leeds (UK)"
+        });   
+
+	var Marker444 = new google.maps.Marker({
+          position: new google.maps.LatLng(38.7181334,-9.1487286),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Lisbon (Portugal)"
+        });   
+
+	var Marker445 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.6250129,22.9601085),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Macedonia (Greece)"
+        });   
+
+	var Marker446 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.5575830,-8.3975680),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Minho (Portugal)"
+        });   
+
+	var Marker447 = new google.maps.Marker({
+          position: new google.maps.LatLng(51.4471925,7.2712650),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Muenster (Germany)"
+        });   
+
+	var Marker448 = new google.maps.Marker({
+          position: new google.maps.LatLng(54.9665195,-1.6268973),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Newcastle (UK)"
+        });   
+
+	var Marker449 = new google.maps.Marker({
+          position: new google.maps.LatLng(59.9138688,10.7522454),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University Oslo (Norway)"
+        });   
+
+	var Marker450 = new google.maps.Marker({
+          position: new google.maps.LatLng(-19.3176715,146.7872377),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Queensland (Australia)"
+        });   
+
+	var Marker451 = new google.maps.Marker({
+          position: new google.maps.LatLng(65.0120888,25.4650773),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Oulu, Pentti Kaiteran katu 1, 90014 Oulu, Finland"
+        });   
+
+	var Marker452 = new google.maps.Marker({
+          position: new google.maps.LatLng(40.6824408,14.7680961),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University Salerno (Italy)"
+        });   
+
+	var Marker453 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.5305056,14.6736502),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Sannio (Italy)"
+        });   
+
+	var Marker454 = new google.maps.Marker({
+          position: new google.maps.LatLng(-14.7975856,-39.1724731),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Santa Cruz, Brazil"
+        });   
+
+	var Marker455 = new google.maps.Marker({
+          position: new google.maps.LatLng(39.9894610,116.3600260),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Science and Technology Beijing"
+        });   
+
+	var Marker456 = new google.maps.Marker({
+          position: new google.maps.LatLng(10.7629130,106.6821717),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Science, Vietnam"
+        });   
+
+	var Marker457 = new google.maps.Marker({
+          position: new google.maps.LatLng(51.2425067,-0.5948961),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Surrey (UK)"
+        });   
+
+	var Marker458 = new google.maps.Marker({
+          position: new google.maps.LatLng(-33.8628753,151.1598462),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Sydney (Australia)"
+        });   
+
+	var Marker459 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.7126775,139.7619890),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of Tokyo (Japan)"
+        });   
+
+	var Marker460 = new google.maps.Marker({
+          position: new google.maps.LatLng(51.3085131,1.0698960),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"University of York (UK)"
+        });   
+
+	var Marker461 = new google.maps.Marker({
+          position: new google.maps.LatLng(41.3889205,2.1121212),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Universtat Politecnica De Catalunya (Spain)"
+        });   
+
+	var Marker462 = new google.maps.Marker({
+          position: new google.maps.LatLng(21.0277644,105.8341598),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Vietnam National University Hanoi"
+        });   
+
+	var Marker463 = new google.maps.Marker({
+          position: new google.maps.LatLng(35.7090259,139.7319925),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Waseda University (Tokyo, Japan)"
+        });   
+
+	var Marker464 = new google.maps.Marker({
+          position: new google.maps.LatLng(27.9938280,120.6993620),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Wenzhou-Kean University (China)"
+        });   
+
+	var Marker465 = new google.maps.Marker({
+          position: new google.maps.LatLng(30.5390663,114.3547099),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Wuhan University (China)"
+        });   
+
+	var Marker466 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.2497730,108.9907490),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Xian Jiaotong University (China) "
+        });   
+
+	var Marker467 = new google.maps.Marker({
+          position: new google.maps.LatLng(37.5657840,126.9385720),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Yonsei University (South Korea)"
+        });   
+
+	var Marker468 = new google.maps.Marker({
+          position: new google.maps.LatLng(11.5824027,104.8979816),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Zaman University, Phnom Penh City, Cambodia"
+        });   
+
+	var Marker469 = new google.maps.Marker({
+          position: new google.maps.LatLng(34.5860300,113.6883090),
+          map: map,
+          icon : 'images/dot3.png',
+          title:"Zhongyuan University of Technology (China)"
+        });   
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+    <hr>
+    <address><a href="mailto:bryant-tp4.vlsi.cs.cmu.edu">bryant</a></address>
+<!-- Created: Fri Jan 20 17:17:15 EST 2012 -->
+<!-- hhmts start -->
+Last modified: Fri Jan 20 17:19:48 EST 2012
+<!-- hhmts end -->
+  </body>
+</html>
