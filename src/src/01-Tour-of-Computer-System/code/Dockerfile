@@ -1,11 +1,13 @@
 FROM gcc:4.9
 
-COPY *.c /home/src/
+COPY src/*.c /home/src/app/
 
-COPY *.h /home/src/
+COPY src/*.h /home/src/app/
 
-WORKDIR /home/src/
+WORKDIR /home/src/app/
 
-RUN gcc -o app main.c
+RUN echo 'alias lc="clear;ls -la"' >> ~/.bashrc
 
-CMD ["./app"]
+# RUN gcc -o app main.c
+
+# CMD ["./app"]

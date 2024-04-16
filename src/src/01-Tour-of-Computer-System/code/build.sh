@@ -1,1 +1,3 @@
-docker build -t trk-gcc-image .
+#!/bin/bash
+
+docker build -t trk-second-gcc-image:latest .
