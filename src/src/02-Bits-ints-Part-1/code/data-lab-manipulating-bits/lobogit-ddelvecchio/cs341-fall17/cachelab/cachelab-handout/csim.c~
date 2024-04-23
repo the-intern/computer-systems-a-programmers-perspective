@@ -1,0 +1,193 @@
+/*
+ * csim.c
+ *
+ *  Created on: Nov 27, 2017
+ *      Author: Dominic
+ */
+#include "cachelab.h"
+#include <stdio.h>
+#include <getopt.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
+#include <strings.h>
+
+
+
+
+
+//Fundamental parameters
+
+//number of sets
+int S;
+//number of lines per set
+int E;
+int B;
+//address size set to 64 as all addresses will be 64 bytes
+int m = 64;
+
+//Derived quantities
+unsigned long long s;
+unsigned long long b;
+unsigned long long tag;
+
+//number of hits, misses and evictions
+int hits = 0;
+int misses = 0;
+int evictions = 0;
+//flag for LRU
+int lru = 0;
+
+    typedef struct
+    {
+      unsigned long long tagline;
+      unsigned long long set;
+      int lastUsed;
+    }line;
+
+
+
+void buildCache(line cache[S][E])
+{
+
+  line currentLine;
+  currentLine.tagline = -1;
+  currentLine.lastUsed = 0;
+ 
+  for(int i=0; i<S; i++)
+    {
+
+      for(int j=0; j<E; j++)
+	{
+	  cache[i][j] = currentLine;
+	}
+    }
+}
+
+int LRU(line cache[S][E], unsigned long long set)
+{
+  //if(E==1) return 0;
+  int least = cache[set][0].lastUsed;
+  int index = 0;
+  for(int i=0; i<E; i++)
+    {
+      if(least >= cache[set][i].lastUsed)
+	{
+	  least = cache[set][i].lastUsed;
+	  index = i;
+	}
+    }
+  return index;
+}
+void cacheSim( line cache[S][E], unsigned long long address)
+{
+  //flag for hit
+  int hit = 0;
+  //flag for empty line
+  int emptyFlag = 0;
+  int emptyLine = 0;
+  line currentLine;
+  currentLine.tagline = address >> (s+b);
+  currentLine.set =  address << tag;
+  currentLine.set = currentLine.set >> (tag + b);
+  for(int i=0; i<E; i++)
+    {
+      if(cache[currentLine.set][i].tagline == -1)
+	{
+	  emptyFlag = 1;
+	  emptyLine = i;
+	}
+      if(cache[currentLine.set][i].tagline == currentLine.tagline)
+	{
+	  hits++;
+	  hit = 1;
+	  lru++;
+	  cache[currentLine.set][i].lastUsed = lru;
+	}
+    }
+
+  if(hit == 0 && emptyFlag ==1)
+    {
+      cache[currentLine.set][emptyLine].tagline = currentLine.tagline;
+      cache[currentLine.set][emptyLine].lastUsed = lru;
+      misses++;
+    }
+  if(hit == 0 && emptyFlag ==0)
+    {
+      int index = LRU(cache,currentLine.set);
+      cache[currentLine.set][index].tagline = currentLine.tagline;
+      cache[currentLine.set][index].lastUsed = lru;
+      misses++;
+      evictions++;
+    }
+
+
+}
+int main(int argc, char **argv)
+{
+  FILE *file;
+  unsigned long long address;
+  int size;
+  char *traceFile;
+  char c;
+  while((c=getopt(argc,argv,"s:E:b:t:vh")) != -1)
+    {
+      switch(c)
+	{
+	case 's':
+	  s = atoi(optarg);
+	  break;
+	case 'E':
+	  E = atoi(optarg);
+	  break;
+	case 'b':
+	  b = atoi(optarg);
+	  break;
+	case 't':
+	  traceFile = optarg;
+	  break;
+	case 'h':
+	  exit(0);
+	default:
+	  exit(1);
+	}
+    }
+
+  S = pow(2, s);
+  B = pow(2, b);
+  tag = m -(s + b);
+
+  line cache[S][E];
+  buildCache(cache);
+  file  = fopen(traceFile, "r");
+
+  if (file != NULL) {
+    while (fscanf(file, " %c %llx,%d", &c, &address, &size) == 3) {
+
+
+      switch(c) {
+      case 'I':
+	break;
+      case 'L':
+	cacheSim(cache, address);
+	break;
+      case 'S':
+	cacheSim(cache, address);
+	break;
+      case 'M':
+	cacheSim(cache, address);
+	cacheSim(cache, address);
+	break;
+      default:
+	break;
+      }
+    }
+  }
+  printSummary(hits, misses, evictions);
+  return 0;
+}
+
+
+
+
+
